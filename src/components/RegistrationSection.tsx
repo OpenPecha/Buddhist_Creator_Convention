@@ -41,35 +41,9 @@ export const RegistrationSection = () => {
 
           {/* Info Cards */}
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="p-6 shadow-soft border-border/50 hover:shadow-elevated transition-shadow">
-              <h4 className="text-xl font-bold text-foreground mb-3">
-                Stay Updated
-              </h4>
-              <p className="text-muted-foreground mb-4">
-                Follow our Instagram account to receive updates and be the first to know when registration opens
-              </p>
-              <Button variant="outline" className="w-full" asChild>
-                <a href="https://www.instagram.com/dharmadutaservicesllp.tech" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="mr-2 w-4 h-4" />
-                  @dharmadutaservicesllp.tech
-                </a>
-              </Button>
-            </Card>
+            
 
-            <Card className="p-6 shadow-soft border-border/50 hover:shadow-elevated transition-shadow">
-              <h4 className="text-xl font-bold text-foreground mb-3">
-                Learn More
-              </h4>
-              <p className="text-muted-foreground mb-4">
-                Visit our website to explore more about Dharmaduta and our mission
-              </p>
-              <Button variant="outline" className="w-full" asChild>
-                <a href="https://dharmaduta.in/" target="_blank" rel="noopener noreferrer">
-                  Visit Dharmaduta.in
-                  <ExternalLink className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
-            </Card>
+            
           </div>
         </div>
       </div>
