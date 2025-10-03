@@ -1,18 +1,18 @@
 import { Card } from "@/components/ui/card";
-import coach1Image from "@/assets/coach-1.jpg";
-import coach2Image from "@/assets/coach-2.jpg";
+import drJaiminImage from "@/assets/dr-jaimin.webp";
+import milanImage from "@/assets/milan.jpeg";
 
 const coaches = [
   {
     name: "Dr. Jaimin Shukla",
     title: "Senior Marketing Executive",
-    image: coach1Image,
+    image: drJaiminImage,
     bio: "With over 15 years of experience in digital marketing and content strategy, our lead coach has helped numerous organizations amplify their online presence and connect with global audiences."
   },
   {
-    name: "Coach Name 2",
+    name: "Milan Amin",
     title: "Senior Marketing Executive",
-    image: coach2Image,
+    image: milanImage,
     bio: "A seasoned expert in social media strategy and brand storytelling, our second coach brings proven techniques and real-world success in building engaged digital communities."
   }
 ];
