@@ -4,7 +4,7 @@ import coach2Image from "@/assets/coach-2.jpg";
 
 const coaches = [
   {
-    name: "Milan Amin",
+    name: "Dr. Jaimin Shukla",
     title: "Senior Marketing Executive",
     image: coach1Image,
     bio: "With over 15 years of experience in digital marketing and content strategy, our lead coach has helped numerous organizations amplify their online presence and connect with global audiences."
