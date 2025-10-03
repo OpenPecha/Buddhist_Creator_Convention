@@ -42,7 +42,7 @@ export const Hero = () => {
             <Button size="lg" className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated text-lg px-8 py-6">
               Register Now
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8 py-6">
+            <Button size="lg" variant="outline" className="border-2 border-primary-foreground/20 text-primary-foreground backdrop-blur-sm text-lg px-8 py-6 bg-orange-500 hover:bg-orange-400">
               Learn More
             </Button>
           </div>
