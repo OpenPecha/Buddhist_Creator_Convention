@@ -26,7 +26,7 @@ const features = [{
   description: "Compete with peers and win prizes for outstanding content creation"
 }];
 export const WhatYouGetSection = () => {
-  return <section className="py-24 bg-background">
+  return <section id="what-you-get" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
