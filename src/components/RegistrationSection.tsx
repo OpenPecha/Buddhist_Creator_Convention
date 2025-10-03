@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Instagram } from "lucide-react";
-
 export const RegistrationSection = () => {
-  return (
-    <section className="py-24 bg-background">
+  return <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Section Header */}
@@ -28,30 +26,14 @@ export const RegistrationSection = () => {
                 Registration details are coming soon
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button 
-                  size="lg" 
-                  className="bg-background text-primary hover:bg-background/90 shadow-lg text-lg px-8"
-                  asChild
-                >
+                <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-lg text-lg px-8" asChild>
                   <a href="#register" target="_blank" rel="noopener noreferrer">
                     Register via Google Form
                     <ExternalLink className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8"
-                  asChild
-                >
-                  <a 
-                    href="https://www.instagram.com/dharmadutaservicesllp.tech" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Instagram className="mr-2 w-5 h-5" />
-                    Follow for Updates
-                  </a>
+                <Button size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8" asChild>
+                  
                 </Button>
               </div>
             </div>
@@ -66,16 +48,8 @@ export const RegistrationSection = () => {
               <p className="text-muted-foreground mb-4">
                 Follow our Instagram account to receive updates and be the first to know when registration opens
               </p>
-              <Button 
-                variant="outline" 
-                className="w-full"
-                asChild
-              >
-                <a 
-                  href="https://www.instagram.com/dharmadutaservicesllp.tech" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+              <Button variant="outline" className="w-full" asChild>
+                <a href="https://www.instagram.com/dharmadutaservicesllp.tech" target="_blank" rel="noopener noreferrer">
                   <Instagram className="mr-2 w-4 h-4" />
                   @dharmadutaservicesllp.tech
                 </a>
@@ -89,16 +63,8 @@ export const RegistrationSection = () => {
               <p className="text-muted-foreground mb-4">
                 Visit our website to explore more about Dharmaduta and our mission
               </p>
-              <Button 
-                variant="outline" 
-                className="w-full"
-                asChild
-              >
-                <a 
-                  href="https://dharmaduta.in/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
+              <Button variant="outline" className="w-full" asChild>
+                <a href="https://dharmaduta.in/" target="_blank" rel="noopener noreferrer">
                   Visit Dharmaduta.in
                   <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
@@ -107,6 +73,5 @@ export const RegistrationSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

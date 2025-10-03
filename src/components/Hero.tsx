@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-bodhgaya.jpg";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Mahabodhi Temple in Bodhgaya" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Mahabodhi Temple in Bodhgaya" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-background/95" />
       </div>
 
@@ -29,9 +23,7 @@ export const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
             Buddhist Creators
-            <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">
-              Masterclass
-            </span>
+            <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">Convention</span>
           </h1>
 
           {/* Tagline */}
@@ -47,17 +39,10 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated text-lg px-8 py-6"
-            >
+            <Button size="lg" className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated text-lg px-8 py-6">
               Register Now
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8 py-6"
-            >
+            <Button size="lg" variant="outline" className="border-2 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8 py-6">
               Learn More
             </Button>
           </div>
@@ -70,6 +55,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

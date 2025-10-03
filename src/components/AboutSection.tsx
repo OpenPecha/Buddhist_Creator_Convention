@@ -1,8 +1,6 @@
 import { Card } from "@/components/ui/card";
-
 export const AboutSection = () => {
-  return (
-    <section className="py-24 bg-gradient-section">
+  return <section className="py-24 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Section Header */}
@@ -34,14 +32,8 @@ export const AboutSection = () => {
           </Card>
 
           {/* Convention Notice */}
-          <Card className="p-6 bg-gradient-hero text-primary-foreground border-0 shadow-elevated">
-            <div className="text-center space-y-2">
-              <h3 className="text-2xl font-bold">2-Day Convention</h3>
-              <p className="text-primary-foreground/90">Dates Coming Soon</p>
-            </div>
-          </Card>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

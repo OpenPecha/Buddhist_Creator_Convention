@@ -1,42 +1,32 @@
 import { Card } from "@/components/ui/card";
 import { BookOpen, Users, Trophy, MessageCircle, Video, Lightbulb } from "lucide-react";
-
-const features = [
-  {
-    icon: Users,
-    title: "Expert Coaching",
-    description: "7 days of intensive training by 2 senior marketing executives with proven techniques"
-  },
-  {
-    icon: BookOpen,
-    title: "Comprehensive Workbooks",
-    description: "Detailed notes translated into actionable insights to get you started immediately"
-  },
-  {
-    icon: Video,
-    title: "Hands-On Skills",
-    description: "Master filming, lighting, sound, editing, scheduling, and livestreaming"
-  },
-  {
-    icon: Lightbulb,
-    title: "Strategic Knowledge",
-    description: "Learn platform selection, storytelling, hooks, and viral content formats"
-  },
-  {
-    icon: MessageCircle,
-    title: "Daily Q&A Sessions",
-    description: "Get your questions answered with full support throughout the masterclass"
-  },
-  {
-    icon: Trophy,
-    title: "Competitions & Prizes",
-    description: "Compete with peers and win prizes for outstanding content creation"
-  }
-];
-
+const features = [{
+  icon: Users,
+  title: "Expert Coaching",
+  description: "7 days of intensive training by 2 senior marketing executives with proven techniques"
+}, {
+  icon: BookOpen,
+  title: "Comprehensive Workbooks",
+  description: "Detailed notes translated into actionable insights to get you started immediately"
+}, {
+  icon: Video,
+  title: "Hands-On Skills",
+  description: "Master filming, lighting, sound, editing, scheduling, and livestreaming"
+}, {
+  icon: Lightbulb,
+  title: "Strategic Knowledge",
+  description: "Learn platform selection, storytelling, hooks, and viral content formats"
+}, {
+  icon: MessageCircle,
+  title: "Daily Q&A Sessions",
+  description: "Get your questions answered with full support throughout the masterclass"
+}, {
+  icon: Trophy,
+  title: "Competitions & Prizes",
+  description: "Compete with peers and win prizes for outstanding content creation"
+}];
 export const WhatYouGetSection = () => {
-  return (
-    <section className="py-24 bg-background">
+  return <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
@@ -53,12 +43,8 @@ export const WhatYouGetSection = () => {
           {/* Features Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
-              return (
-                <Card 
-                  key={index} 
-                  className="p-6 hover:shadow-elevated transition-all duration-300 border-border/50 hover:border-primary/30"
-                >
+            const Icon = feature.icon;
+            return <Card key={index} className="p-6 hover:shadow-elevated transition-all duration-300 border-border/50 hover:border-primary/30">
                   <div className="space-y-4">
                     <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center">
                       <Icon className="w-6 h-6 text-primary-foreground" />
@@ -70,19 +56,13 @@ export const WhatYouGetSection = () => {
                       {feature.description}
                     </p>
                   </div>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
 
           {/* Quote */}
-          <Card className="p-8 bg-muted/50 border-l-4 border-l-primary shadow-soft">
-            <blockquote className="text-xl md:text-2xl italic text-foreground/80 text-center">
-              "You'll see your frustration after a lot of work decrease and your number of followers increase."
-            </blockquote>
-          </Card>
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
