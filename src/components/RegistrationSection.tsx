@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ExternalLink, Instagram } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 export const RegistrationSection = () => {
   return <section id="registration" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -10,9 +10,6 @@ export const RegistrationSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               How to Register
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Are you ready to amplify your voice and share the Dharma with clarity and compassion?
-            </p>
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
           </div>
 
@@ -20,15 +17,12 @@ export const RegistrationSection = () => {
           <Card className="p-8 md:p-12 bg-gradient-hero text-center shadow-elevated border-0">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-primary-foreground">
-                Join the Masterclass
+                Join the Convention
               </h3>
-              <p className="text-xl text-primary-foreground/90">
-                Registration details are coming soon
-              </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-lg text-lg px-8" asChild>
                   <a href="#register" target="_blank" rel="noopener noreferrer">
-                    Register via Google Form
+                    Register In One Minute
                     <ExternalLink className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
