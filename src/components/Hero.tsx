@@ -15,13 +15,13 @@ export const Hero = () => {
           <div className="inline-block">
             <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-light font-medium backdrop-blur-sm">
               <Calendar className="w-4 h-4" />
-              January 31 - February 6, 2026
+              January 29 - February 6, 2026
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Buddhist Creators
+            Buddhist Creators{' '}
             <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">Convention</span>
           </h1>
 
