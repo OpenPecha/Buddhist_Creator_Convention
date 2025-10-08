@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-bodhgaya.jpg";
 export const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={heroImage} alt="Mahabodhi Temple in Bodhgaya" className="w-full h-full object-cover" />
+        <img src="/drone_shot.gif" alt="Drone shot of the venue in Bodhgaya" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-background/95" />
       </div>
 
