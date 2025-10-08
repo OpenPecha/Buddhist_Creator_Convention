@@ -33,7 +33,14 @@ export const Hero = () => {
           {/* Location */}
           <div className="flex items-center justify-center gap-2 text-primary-foreground/80">
             <MapPin className="w-5 h-5" />
-            <span className="text-lg">Buddhist Thai-Bharat Society, Bodhgaya, India</span>
+            <a
+              href="https://maps.app.goo.gl/KnpgfrYUFX4NoZHc8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg hover:underline underline-offset-4"
+            >
+              Buddhist Thai-Bharat Society, Bodhgaya, India
+            </a>
           </div>
 
           {/* Key Stats */}
