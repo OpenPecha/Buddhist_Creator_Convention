@@ -36,6 +36,28 @@ export const Hero = () => {
             <span className="text-lg">Buddhist Thai-Bharat Society, Bodhgaya, India</span>
           </div>
 
+          {/* Key Stats */}
+          <div className="pt-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
+                <div className="text-3xl md:text-4xl font-extrabold leading-none">100+</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Attendees</div>
+              </div>
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
+                <div className="text-3xl md:text-4xl font-extrabold leading-none">10+</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Countries</div>
+              </div>
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
+                <div className="text-3xl md:text-4xl font-extrabold leading-none">500K+</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Combined Followers</div>
+              </div>
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
+                <div className="text-3xl md:text-4xl font-extrabold leading-none">5+</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Major Platforms</div>
+              </div>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button size="lg" className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated text-lg px-8 py-6" asChild>
