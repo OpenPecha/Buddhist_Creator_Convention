@@ -60,4 +60,5 @@ This is a static site. After `npm run build`, deploy the `dist/` folder to any s
 
 ### Contributing
 
+
 Pull requests are welcome. For larger changes, please open an issue to discuss what you would like to change.
