@@ -10,8 +10,18 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* Top-left logo */}
+      <div className="fixed top-4 left-4 z-50">
+        <a href="/" aria-label="Home">
+          <img
+            src="/logo.png" style={{ margin: "10px 0px 0px 20px" }}
+            alt="Buddhist Creator Convention logo"
+            className="h-10 w-auto drop-shadow-md opacity-95 hover:opacity-100 transition"
+          />
+        </a>
+      </div>
       {/* Floating Register Now button */}
-      <div className="fixed top-4 right-4 z-50">
+      <div className="fixed top-6 right-8 z-50">
         <Button
           size="sm"
           className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated"

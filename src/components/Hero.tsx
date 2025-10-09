@@ -5,7 +5,6 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img src="/drone_shot.gif" alt="Drone shot of the venue in Bodhgaya" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-secondary/90 via-secondary/70 to-background/95" />
       </div>
 
       {/* Content */}
@@ -13,9 +12,9 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Badge */}
           <div className="inline-block">
-            <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-light font-medium backdrop-blur-sm">
+            <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-white font-medium backdrop-blur-sm">
               <Calendar className="w-4 h-4" />
-              January 29 - February 6, 2026
+              Jan 29 - Feb 6, 2026
               <span aria-hidden="true">•</span>
               <a
                 href="https://calendar.google.com/calendar/u/0?cid=Y19iYjA4ZDZiODc3ODcxMjYxNGRjYzZkMGEzOTNiOWNlYmJkMTdmMTUzMWEyM2U1ZDY0NjZjNTRlYmI2ZDgyNTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
@@ -34,22 +33,21 @@ export const Hero = () => {
             <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">Convention</span>
           </h1>
 
-          {/* Tagline */}
-          <p className="text-xl md:text-2xl text-primary-foreground/90 font-light max-w-3xl mx-auto">
-            Harnessing the Digital World to Share Wisdom, Compassion, and Dharma
-          </p>
 
           {/* Location */}
-          <div className="flex items-center justify-center gap-2 text-primary-foreground/80">
-            <MapPin className="w-5 h-5" />
-            <a
-              href="https://maps.app.goo.gl/KnpgfrYUFX4NoZHc8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg hover:underline underline-offset-4"
-            >
-              Buddhist Thai-Bharat Society, Bodhgaya, India
-            </a>
+          <div className="flex items-center justify-center">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
+              <MapPin className="w-5 h-5" />
+              <a
+                href="https://maps.app.goo.gl/KnpgfrYUFX4NoZHc8"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontWeight: "bold" }}
+                className="text-lg hover:underline underline-offset-4"
+              >
+                Buddhist Thai-Bharat Society, Bodhgaya, India
+              </a>
+            </span>
           </div>
 
           {/* Key Stats */}
