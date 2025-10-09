@@ -9,7 +9,7 @@ export const Footer = () => {
               <h3 className="text-xl font-bold">Contact Us</h3>
               <a href="mailto:contact@dharmaduta.in" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                 <Mail className="w-5 h-5" />
-                contact@dharmaduta.in
+                hello@buddhistcreators.com
               </a>
             </div>
 
