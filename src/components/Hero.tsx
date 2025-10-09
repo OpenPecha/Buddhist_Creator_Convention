@@ -16,6 +16,15 @@ export const Hero = () => {
             <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-light font-medium backdrop-blur-sm">
               <Calendar className="w-4 h-4" />
               January 29 - February 6, 2026
+              <span aria-hidden="true">•</span>
+              <a
+                href="https://calendar.google.com/calendar/u/0?cid=Y19iYjA4ZDZiODc3ODcxMjYxNGRjYzZkMGEzOTNiOWNlYmJkMTdmMTUzMWEyM2U1ZDY0NjZjNTRlYmI2ZDgyNTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-primary-foreground/90"
+              >
+                Add to Calendar
+              </a>
             </span>
           </div>
 
