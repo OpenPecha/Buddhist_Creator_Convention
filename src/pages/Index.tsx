@@ -17,7 +17,7 @@ const Index = () => {
           className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated"
           asChild
         >
-          <a href="#registration" aria-label="Register Now">Register Now</a>
+          <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer" aria-label="Register Now">Register Now</a>
         </Button>
       </div>
       <Hero />
