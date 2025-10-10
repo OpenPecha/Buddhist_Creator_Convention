@@ -1,9 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import coach1 from "@/assets/coach-1.jpg";
-import coach2 from "@/assets/coach-2.jpg";
-import milan from "@/assets/milan.jpeg";
 export const AboutSection = () => {
+  const dayImages: Record<number, string> = {
+    1: "/time_line/Day 1 - Community Day.png",
+    2: "\u002Ftime_line\u002FDay 2 – Becoming a Digital Bodhisattva.png",
+    3: "\u002Ftime_line\u002FDay 3 – The Art of Validation_ Knowing What the World Needs.png",
+    4: "\u002Ftime_line\u002FDay 4 – Storytelling that Transforms.png",
+    5: "\u002Ftime_line\u002FDay 5 – Amplification_ Working with AI as Your Dharma Assistant.png",
+    6: "\u002Ftime_line\u002FDay 6 – Growth and Momentum_ Virality through Consistency.png",
+    7: "\u002Ftime_line\u002FDay 7 – Sustainability_ Monetisation and Presence.png",
+    8: "\u002Ftime_line\u002FDay 8 – The Great Recap_ Integrating Wisdom into Action.png",
+  };
   const masterclassDays = [
     {
       day: 2,
@@ -123,7 +130,7 @@ export const AboutSection = () => {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
-                      <img src={milan} alt="Creators sharing ideas during community day" className="w-full h-full object-cover" loading="lazy" />
+                      <img src={dayImages[1]} alt="Creators sharing ideas during community day" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                   <div style={{ marginLeft: '20px' }}>
@@ -149,7 +156,7 @@ export const AboutSection = () => {
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <div className="overflow-hidden rounded-lg">
                       <div className="aspect-[16/9] w-full overflow-hidden">
-                        <img src={day % 2 === 0 ? coach1 : coach2} alt={`Hands-on masterclass session Day ${day}`} className="w-full h-full object-cover" loading="lazy" />
+                        <img src={dayImages[day]} alt={`Hands-on masterclass session Day ${day}`} className="w-full h-full object-cover" loading="lazy" />
                       </div>
                     </div>
                     <div>

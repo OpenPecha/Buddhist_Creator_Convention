@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import drJaiminImage from "@/assets/dr-jaimin.webp";
-import milanImage from "@/assets/milan.jpeg";
+import drJaiminImage from "@/assets/jaimin.jpg";
+import milanImage from "@/assets/milan.jpg";
 
 const coaches = [
   {
