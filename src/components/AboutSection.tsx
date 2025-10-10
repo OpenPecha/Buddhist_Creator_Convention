@@ -98,15 +98,20 @@ export const AboutSection = () => {
             {/* Day 0 */}
             <TabsContent value="day0">
               <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                <h3 className="text-2xl font-bold mb-4">Day 0 — Registration</h3>
+                <h3 className="text-2xl font-bold mb-4">Day 0 — Welcome & Registration</h3>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
                       <img src="/drone_shot.gif" alt="Venue aerial view for registration day" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
-                  <div>
-                    <p className="text-foreground/80">Arrivals, on-site registration, and an inspiring opening to welcome everyone and set the tone for the week.</p>
+                  <div style={{ marginLeft: '20px' }}>
+                    <li>
+                    <b>Afternoon:</b> Arrive, complete your on-site registration, and take some time to settle in and meet other attendees.
+                    </li>
+                    <li>
+                    <b>Evening:</b> Join our opening session to officially kick off the week. It will be a friendly and inspiring welcome to help everyone connect.
+                    </li>
                   </div>
                 </div>
               </Card>
@@ -122,8 +127,16 @@ export const AboutSection = () => {
                       <img src={milan} alt="Creators sharing ideas during community day" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
-                  <div>
-                    <p className="text-foreground/80">Keynotes, lightning talks, and community circles to connect, share, and learn from each other.</p>
+                  <div style={{ marginLeft: '20px' }}>
+                    <li>
+                    <b>Panel Discussion:</b> "Future of Buddhism in the Digital Age"
+                    </li>
+                    <li>
+                    <b>Lightning talks:</b>  Creators present their work-in-progress, challenges and lessons learned
+                    </li>
+                    <li>
+                      <b>Community circles:</b> Deepen connections and support each other's growth
+                    </li>
                   </div>
                 </div>
               </Card>
