@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import heroImage from "@/assets/hero-bodhgaya.jpg";
 import coach1 from "@/assets/coach-1.jpg";
 import coach2 from "@/assets/coach-2.jpg";
 import milan from "@/assets/milan.jpeg";
@@ -83,16 +82,16 @@ export const AboutSection = () => {
 
           {/* Timeline Tabs */}
           <Tabs defaultValue="day0" className="w-full">
-            <TabsList className="flex flex-wrap gap-2">
-              <TabsTrigger value="day0">Day 0</TabsTrigger>
-              <TabsTrigger value="day1">Day 1</TabsTrigger>
-              <TabsTrigger value="day2">Day 2</TabsTrigger>
-              <TabsTrigger value="day3">Day 3</TabsTrigger>
-              <TabsTrigger value="day4">Day 4</TabsTrigger>
-              <TabsTrigger value="day5">Day 5</TabsTrigger>
-              <TabsTrigger value="day6">Day 6</TabsTrigger>
-              <TabsTrigger value="day7">Day 7</TabsTrigger>
-              <TabsTrigger value="day8">Day 8</TabsTrigger>
+            <TabsList className="flex gap-2 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:overflow-visible px-4 py-1 w-full justify-start sm:justify-center scroll-pl-4">
+              <TabsTrigger value="day0" className="shrink-0">Day 0</TabsTrigger>
+              <TabsTrigger value="day1" className="shrink-0">Day 1</TabsTrigger>
+              <TabsTrigger value="day2" className="shrink-0">Day 2</TabsTrigger>
+              <TabsTrigger value="day3" className="shrink-0">Day 3</TabsTrigger>
+              <TabsTrigger value="day4" className="shrink-0">Day 4</TabsTrigger>
+              <TabsTrigger value="day5" className="shrink-0">Day 5</TabsTrigger>
+              <TabsTrigger value="day6" className="shrink-0">Day 6</TabsTrigger>
+              <TabsTrigger value="day7" className="shrink-0">Day 7</TabsTrigger>
+              <TabsTrigger value="day8" className="shrink-0">Day 8</TabsTrigger>
             </TabsList>
 
             {/* Day 0 */}
