@@ -17,8 +17,7 @@ export const Hero = () => {
               Jan 29 - Feb 6, 2026
               <span aria-hidden="true">•</span>
               <a
-                href="https://calendar.google.com/calendar/u/0?cid=Y19iYjA4ZDZiODc3ODcxMjYxNGRjYzZkMGEzOTNiOWNlYmJkMTdmMTUzMWEyM2U1ZDY0NjZjNTRlYmI2ZDgyNTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-                target="_blank"
+                href="https://calendar.google.com/calendar/u/0?cid=Y183MTQxMGRhMzZlYjRiYTE5MGU0YzY4YzJjOTI0NzNiYThkZWI1OWU4NDIxMmVkOWQ3YTQwMDY4ZWM3NjVkNDUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
                 rel="noopener noreferrer"
                 className="underline underline-offset-2 hover:text-primary-foreground/90"
               >
