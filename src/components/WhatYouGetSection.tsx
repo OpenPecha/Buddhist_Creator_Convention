@@ -14,42 +14,42 @@ const features: FeatureItem[] = [
     icon: Users,
     title: "Expert Coaching",
     description: "7 days of intensive training by 2 senior marketing executives with proven techniques",
-    image: "/placeholder.svg",
+    image: "/what you will get/Expert Coaching.png",
     alt: "Coach guiding attendees during a workshop"
   },
   {
     icon: BookOpen,
     title: "Comprehensive Workbooks",
     description: "Detailed notes translated into actionable insights to get you started immediately",
-    image: "/placeholder.svg",
+    image: "/what you will get/Comprehensive Workbooks.png",
     alt: "Printed workbooks and notes on a desk"
   },
   {
     icon: Video,
     title: "Hands-On Skills",
     description: "Master filming, lighting, sound, editing, scheduling, and livestreaming",
-    image: "/placeholder.svg",
+    image: "/what you will get/Hands-On Skills.png",
     alt: "Attendee filming with camera and lighting setup"
   },
   {
     icon: Lightbulb,
     title: "Strategic Knowledge",
     description: "Learn platform selection, storytelling, hooks, and viral content formats",
-    image: "/placeholder.svg",
+    image: "/what you will get/Strategic Knowledge.png",
     alt: "Lightbulb icon over content strategy board"
   },
   {
     icon: MessageCircle,
     title: "Daily Q&A Sessions",
     description: "Get your questions answered with full support throughout the masterclass",
-    image: "/placeholder.svg",
+    image: "/what you will get/Daily Q&A Sessions.png",
     alt: "Group Q&A session with mentors"
   },
   {
     icon: Trophy,
     title: "Competitions & Prizes",
     description: "Compete with peers and win prizes for outstanding content creation",
-    image: "/placeholder.svg",
+    image: "/what you will get/Competitions & Prizes.png",
     alt: "Winners holding a trophy on stage"
   }
 ];

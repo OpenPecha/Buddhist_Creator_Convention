@@ -35,8 +35,8 @@ export const CoachesSection = () => {
 
           {/* Coaches Grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {coaches.map((coach, index) => (
-              <Card key={index} className="p-8 hover:shadow-elevated transition-all duration-300 border-border/50">
+            {coaches.map((coach) => (
+              <Card key={coach.name} className="p-8 hover:shadow-elevated transition-all duration-300 border-border/50">
                 <div className="flex flex-col items-center text-center space-y-6">
                   <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft">
                     <img 

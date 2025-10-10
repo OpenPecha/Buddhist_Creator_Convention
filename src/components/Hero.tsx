@@ -75,7 +75,7 @@ export const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button size="lg" className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated text-lg px-8 py-6" asChild>
-              <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">Register Now</a>
+              <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">Register In 30s</a>
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-primary-foreground/20 text-primary-foreground backdrop-blur-sm text-lg px-8 py-6 bg-orange-500 hover:bg-orange-400" asChild>
               <a href="#what-you-get">Learn More</a>

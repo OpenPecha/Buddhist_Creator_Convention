@@ -22,7 +22,7 @@ export const RegistrationSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-lg text-lg px-8" asChild>
                   <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">
-                    Register In One Minute
+                    Register In 30s
                     <ExternalLink className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
