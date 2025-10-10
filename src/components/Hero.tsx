@@ -2,9 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 export const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img src="/drone_shot.gif" alt="Drone shot of the venue in Bodhgaya" className="w-full h-full object-cover" />
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/drone_shot.gif"
+        >
+          <source src="/drone_shot.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Content */}
