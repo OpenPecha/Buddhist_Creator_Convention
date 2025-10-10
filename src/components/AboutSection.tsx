@@ -53,11 +53,20 @@ export const AboutSection = () => {
     },
     {
       day: 7,
+      title: "Sustainability: Monetisation and Presence",
+      bullets: [
+        "Redefine monetisation as compassion in action building sustainable support for your Dharma work.",
+        "Strengthen your presence on camera, turning nervousness into service and energy into connection.",
+        "Learn how authenticity, body language, and mindfulness create a digital presence that truly transmits the Dharma."
+      ]
+    },
+    {
+      day: 8,
       title: "The Great Recap: Integrating Wisdom into Action",
       bullets: [
-        "Revisit Six Days of Transformation — a guided review from storytelling and validation to AI, virality, and presence.",
-        "Anchor the teachings in practice — reflect, ground, and integrate your journey to become a Digital Bodhisattva.",
-        "Celebrate and commit — recognise your progress, receive completion awards, and set the intention to carry the Dharma fearlessly into the world."
+        "Revisit Six Days of Transformation: A full guided review of everything learned from storytelling and validation to AI, virality, and presence.",
+        "Anchor the Teachings in Practice: Reflect, ground, and integrate your journey to become a true Digital Bodhisattva.",
+        "Celebrate and Commit: Recognise your progress, receive your completion awards, and set your intention to carry the Dharma fearlessly into the world."
       ]
     }
   ];
@@ -143,22 +152,7 @@ export const AboutSection = () => {
               </TabsContent>
             ))}
 
-            {/* Day 8 */}
-            <TabsContent value="day8">
-              <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                <h3 className="text-2xl font-bold mb-4">Day 8 — Recap & Closing</h3>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div className="overflow-hidden rounded-lg">
-                    <div className="aspect-[16/9] w-full overflow-hidden">
-                      <img src={heroImage} alt="Closing ceremony and award presentation" className="w-full h-full object-cover" loading="lazy" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-foreground/80">Celebrate progress, share takeaways, and honor excellence with the Creator of the Year award.</p>
-                  </div>
-                </div>
-              </Card>
-            </TabsContent>
+            
           </Tabs>
         </div>
       </div>

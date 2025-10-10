@@ -30,6 +30,9 @@ export const RegistrationSection = () => {
                   
                 </Button>
               </div>
+              <p className="text-primary-foreground/90 font-medium">
+                Apply Before 15th December 2025
+              </p>
             </div>
           </Card>
 
