@@ -1,28 +1,24 @@
 import { Card } from "@/components/ui/card";
-import coach1 from "@/assets/coach-1.jpg";
-import coach2 from "@/assets/coach-2.jpg";
-import drJaimin from "@/assets/dr-jaimin.webp";
-import milan from "@/assets/milan.jpeg";
 
 const audienceVisuals = [
   {
     title: "Monastics expanding their reach",
-    image: coach1,
+    image: "/Who is this for/Monastics expanding their reach.png",
     alt: "Monk recording content with camera setup"
   },
   {
     title: "Passionate lay practitioners",
-    image: coach2,
+    image: "/Who is this for/Passionate lay practitioners.png",
     alt: "Lay practitioner creating video content"
   },
   {
     title: "Organization social media managers",
-    image: drJaimin,
+    image: "/Who is this for/Organization social media managers.png",
     alt: "Team collaborating on social strategy"
   },
   {
     title: "Buddhist content creators",
-    image: milan,
+    image: "/Who is this for/Buddhist content creators.png",
     alt: "Creator presenting to an audience"
   }
 ];
