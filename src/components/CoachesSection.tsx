@@ -5,15 +5,15 @@ import milanImage from "@/assets/milan.jpeg";
 const coaches = [
   {
     name: "Dr. Jaimin Shukla",
-    title: "Senior Marketing Executive",
+    title: "Global Chief Marketing Officer",
     image: drJaiminImage,
-    bio: "With over 15 years of experience in digital marketing and content strategy, our lead coach has helped numerous organizations amplify their online presence and connect with global audiences."
+    bio: "Dr. Jaimin Shukla is a Global Chief Marketing Officer with 14 years of experience driving exponential business growth through multi-channel marketing and technology. A former Shell-sponsored PhD from University College London, his research in advanced fuel systems is published internationally. He is also the founder of The School of Insights and author of Transform Every Moment, a guide to discovering hidden happiness and inner peace."
   },
   {
     name: "Milan Amin",
-    title: "Senior Marketing Executive",
+    title: "Senior Brand Strategist",
     image: milanImage,
-    bio: "A seasoned expert in social media strategy and brand storytelling, our second coach brings proven techniques and real-world success in building engaged digital communities."
+    bio: "With over 15 years in marketing and a decade in C-level leadership, Milan Amin has led global brand and strategy for multi-billion-dollar companies, where he spearheaded landmark Web3 partnerships with the biggest celebrities including Cristiano Ronaldo, Lionel Messi, Formula 1, The GRAMMYs, The Weeknd, and Cannes Film Festival. Based in Dubai, he advised over 30+ startups, governments, and multi-billion dollar global consultancies across the Crypto, AI, and FinTech sectors."
   }
 ];
 

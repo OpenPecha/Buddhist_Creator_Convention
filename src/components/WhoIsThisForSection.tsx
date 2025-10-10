@@ -73,10 +73,10 @@ export const WhoIsThisForSection = () => {
             </h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { title: "Accommodation", image: "/placeholder.svg", alt: "Comfortable accommodation rooms" },
-                { title: "Meals", image: "/placeholder.svg", alt: "Nutritious meals served to attendees" },
-                { title: "Materials", image: "/placeholder.svg", alt: "Workshop materials and stationery" },
-                { title: "Scholarship Support", image: "/placeholder.svg", alt: "Scholarship support for travel" }
+                { title: "Accommodation", image: "/accomodation.png", alt: "Comfortable accommodation rooms" },
+                { title: "Meals", image: "/meals.png", alt: "Nutritious meals served to attendees" },
+                { title: "Materials", image: "/materials.png", alt: "Workshop materials and stationery" },
+                { title: "Scholarship Support", image: "/scholarship.png", alt: "Scholarship support for travel" }
               ].map((item) => (
                 <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background">
                   <div className="aspect-[3/4] w-full overflow-hidden">
