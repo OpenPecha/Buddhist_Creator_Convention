@@ -25,14 +25,6 @@ export const Hero = () => {
             <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-white font-medium backdrop-blur-sm">
               <Calendar className="w-4 h-4" />
               Jan 29 - Feb 6, 2026
-              <span aria-hidden="true">•</span>
-              <a
-                href="https://calendar.google.com/calendar/u/0?cid=Y183MTQxMGRhMzZlYjRiYTE5MGU0YzY4YzJjOTI0NzNiYThkZWI1OWU4NDIxMmVkOWQ3YTQwMDY4ZWM3NjVkNDUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-primary-foreground/90"
-              >
-                Add to Calendar
-              </a>
             </span>
           </div>
 
@@ -47,21 +39,13 @@ export const Hero = () => {
           <div className="flex items-center justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
               <MapPin className="w-5 h-5" />
-              <a
-                href="https://maps.app.goo.gl/KnpgfrYUFX4NoZHc8"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ fontWeight: "bold" }}
-                className="text-lg hover:underline underline-offset-4"
-              >
                 Buddhist Thai-Bharat Society, Bodhgaya, India
-              </a>
             </span>
           </div>
 
           {/* Key Stats */}
           <div className="pt-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
                 <div className="text-3xl md:text-4xl font-extrabold leading-none">100+</div>
                 <div className="mt-1 text-sm md:text-base opacity-90">Attendees</div>
@@ -74,10 +58,6 @@ export const Hero = () => {
                 <div className="text-3xl md:text-4xl font-extrabold leading-none">500K+</div>
                 <div className="mt-1 text-sm md:text-base opacity-90">Combined Followers</div>
               </div>
-              <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
-                <div className="text-3xl md:text-4xl font-extrabold leading-none">5+</div>
-                <div className="mt-1 text-sm md:text-base opacity-90">Major Platforms</div>
-              </div>
             </div>
           </div>
 
@@ -87,7 +67,7 @@ export const Hero = () => {
               <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">Register In 30s</a>
             </Button>
             <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-elevated text-lg px-8 py-6" asChild>
-              <a href="#what-you-get">Learn More</a>
+              <a href="#timeline">Learn More</a>
             </Button>
           </div>
 

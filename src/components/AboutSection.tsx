@@ -76,7 +76,7 @@ export const AboutSection = () => {
       ]
     }
   ];
-  return <section className="py-24 bg-gradient-section">
+  return <section id="timeline" className="py-24 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
