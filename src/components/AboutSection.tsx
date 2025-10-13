@@ -16,63 +16,63 @@ export const AboutSection = () => {
       day: 2,
       title: "Becoming a Digital Bodhisattva",
       bullets: [
-        "Discover why social media is the modern monastery where billions seek meaning, comfort, and truth every day.",
-        "Learn how to define your Dharma niche, choose your ideal format, and find the right platforms to begin sharing.",
-        "Understand that spreading the Dharma online is not self-promotion but service — compassion expressed through digital wisdom."
+        "<b>Social Media as a Sacred Space:</b>Discover why social media is the modern monastery where billions seek meaning, comfort, and truth every day.",
+        "<b>Finding Your Niche:</b>Learn how to define your Dharma niche, choose your ideal format, and find the right platforms to begin sharing.",
+        "<b>The Bodhisattva's Motivation Online:</b>Understand that spreading the Dharma online is not self-promotion but service — compassion expressed through digital wisdom."
       ]
     },
     {
       day: 3,
       title: "The Art of Validation: Knowing What the World Needs",
       bullets: [
-        "Learn how to stop guessing and start creating content that truly resonates through real-world validation.",
-        "Discover the three layers of alignment — your lived truth, market demand, and your audience’s voice.",
-        "Turn insight into magnetic content that feels personal, authentic, and deeply needed."
+        "<b>Creating Content That Resonates:</b>Learn how to stop guessing and start creating content that truly resonates through real-world validation.",
+        "<b>Truth, Demand, and Audience:</b>Discover the three layers of alignment — your lived truth, market demand, and your audience’s voice.",
+        "<b>Crafting Magnetic Content:</b>Turn insight into magnetic content that feels personal, authentic, and deeply needed."
       ]
     },
     {
       day: 4,
       title: "Storytelling that Transforms",
       bullets: [
-        "Master the timeless structure of storytelling to make your Dharma unforgettable and emotionally resonant.",
-        "Learn how global storytellers captivate millions and how to express your own authentic voice.",
-        "Bridge the sacred and the everyday by blending humour, emotion, and humanity into your Dharma teaching."
+        "<b>Making the Dharma Unforgettable:</b>Master the timeless structure of storytelling to make your Dharma unforgettable and emotionally resonant.",
+        "<b>Learning from the Masters:</b>Learn how global storytellers captivate millions and how to express your own authentic voice.",
+        "<b>Bridging Worlds:</b>Bridge the sacred and the everyday by blending humour, emotion, and humanity into your Dharma teaching."
       ]
     },
     {
       day: 5,
       title: "Amplification: Working with AI as Your Dharma Assistant",
       bullets: [
-        "Transform AI from a generic tool into your creative partner — helping you script, refine, and validate content faster.",
-        "Learn how to train AI with your own teachings, principles, and insights to reflect your authentic voice.",
-        "Use AI tools for scripting, editing, dubbing, and global reach — without losing your soul in the process."
+        "<b>AI as Your Creative Partner:</b>Transform AI from a generic tool into your creative partner — helping you script, refine, and validate content faster.",
+        "<b>Training Your AI:</b>Learn how to train AI with your own teachings, principles, and insights to reflect your authentic voice.",
+        "<b>Ethical AI Tools:</b>Use AI tools for scripting, editing, dubbing, and global reach — without losing your soul in the process."
       ]
     },
     {
       day: 6,
       title: "Growth and Momentum: Virality through Consistency",
       bullets: [
-        "Understand the true science of virality — how ethical resonance spreads faster than trends.",
-        "Build a rhythm of consistency that sustains your growth through small, steady 1% improvements.",
-        "Refine, reflect, and evolve through analytics, discipline, and the Dharma of daily effort."
+        "<b>The Science of Virality:</b>Understand the true science of virality — how ethical resonance spreads faster than trends.",
+        "<b>The Power of 1% Improvements:</b>Build a rhythm of consistency that sustains your growth through small, steady 1% improvements.",
+        "<b>Reflecting and Evolving with Analytics:</b>Refine, reflect, and evolve through analytics, discipline, and the Dharma of daily effort."
       ]
     },
     {
       day: 7,
       title: "Sustainability: Monetisation and Presence",
       bullets: [
-        "Redefine monetisation as compassion in action building sustainable support for your Dharma work.",
-        "Strengthen your presence on camera, turning nervousness into service and energy into connection.",
-        "Learn how authenticity, body language, and mindfulness create a digital presence that truly transmits the Dharma."
+        "<b>Compassionate Monetization:</b>Redefine monetisation as compassion in action building sustainable support for your Dharma work.",
+        "<b>On-Camera Presence:</b>Strengthen your presence on camera, turning nervousness into service and energy into connection.",
+        "<b>Authenticity and Mindfulness on Screen:</b>Learn how authenticity, body language, and mindfulness create a digital presence that truly transmits the Dharma."
       ]
     },
     {
       day: 8,
       title: "The Great Recap: Integrating Wisdom into Action",
       bullets: [
-        "Revisit Six Days of Transformation: A full guided review of everything learned from storytelling and validation to AI, virality, and presence.",
-        "Anchor the Teachings in Practice: Reflect, ground, and integrate your journey to become a true Digital Bodhisattva.",
-        "Celebrate and Commit: Recognise your progress, receive your completion awards, and set your intention to carry the Dharma fearlessly into the world."
+        "<b>Revisit Six Days of Transformation:</b> A full guided review of everything learned from storytelling and validation to AI, virality, and presence.",
+        "<b>Anchor the Teachings in Practice:</b> Reflect, ground, and integrate your journey to become a true Digital Bodhisattva.",
+        "<b>Celebrate and Commit:</b> Recognise your progress, receive your completion awards, and set your intention to carry the Dharma fearlessly into the world."
       ]
     }
   ];
@@ -161,9 +161,20 @@ export const AboutSection = () => {
                     </div>
                     <div>
                       <ul className="text-foreground/80 list-disc space-y-2 pl-5 text-left">
-                        {bullets.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
+                        {bullets.map((item) => {
+                          const cleaned = item.replace(/<\/?b>/g, "");
+                          const colonIndex = cleaned.indexOf(":");
+                          if (colonIndex > 0 && colonIndex < cleaned.length - 1) {
+                            const title = cleaned.slice(0, colonIndex).trim();
+                            const desc = cleaned.slice(colonIndex + 1).trim();
+                            return (
+                              <li key={item}>
+                                <span className="font-semibold">{title}:</span> {desc}
+                              </li>
+                            );
+                          }
+                          return <li key={item}>{cleaned}</li>;
+                        })}
                       </ul>
                     </div>
                   </div>
