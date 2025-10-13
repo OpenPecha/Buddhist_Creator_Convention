@@ -27,7 +27,7 @@ export const Footer = () => {
 
             {/* Links */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Connect</h3>
+              <h3 className="text-xl font-bold">Connect To Organiser</h3>
               <div className="space-y-2">
                 <a href="https://dharmaduta.in/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <ExternalLink className="w-4 h-4" />

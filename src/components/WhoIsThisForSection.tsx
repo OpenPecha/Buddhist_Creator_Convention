@@ -63,10 +63,13 @@ export const WhoIsThisForSection = () => {
           </Card>
 
           {/* What We Provide */}
-          <Card className="p-8 bg-secondary/5 border-secondary/20 shadow-soft">
-            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+          <div className="text-center space-y-4 mt-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               What We Will Provide
-            </h3>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
+          </div>
+          <Card className="p-8 bg-secondary/5 border-secondary/20 shadow-soft">
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { title: "Accommodation", image: "/accomodation.png", alt: "Comfortable accommodation rooms" },

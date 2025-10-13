@@ -39,7 +39,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
               <MapPin className="w-5 h-5" />
-                Buddhist Thai-Bharat Society, Bodhgaya, India
+              Wat Thai Magadh Buddhists Vipassana centre Bodhgaya
             </span>
           </div>
 
@@ -55,7 +55,7 @@ export const Hero = () => {
                 <div className="mt-1 text-sm md:text-base opacity-90">Countries</div>
               </div>
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
-                <div className="text-3xl md:text-4xl font-extrabold leading-none">500K+</div>
+                <div className="text-3xl md:text-4xl font-extrabold leading-none">1M+</div>
                 <div className="mt-1 text-sm md:text-base opacity-90">Combined Followers</div>
               </div>
             </div>
