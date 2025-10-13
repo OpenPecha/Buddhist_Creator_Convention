@@ -29,9 +29,8 @@ export const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Buddhist Creators{' '}
-            <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">Convention</span>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight inline-block px-6 py-3 bg-primary/10 border border-primary/20 rounded-full backdrop-blur-sm text-primary-foreground">
+            Buddhist Creators <span className="text-white">Convention</span>
           </h1>
 
 
