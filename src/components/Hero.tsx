@@ -1,20 +1,37 @@
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 import { Calendar, MapPin } from "lucide-react";
 export const Hero = () => {
+  const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+
+  useEffect(() => {
+    if (!carouselApi) return;
+    const id = setInterval(() => {
+      carouselApi.scrollNext();
+    }, 4000);
+    return () => clearInterval(id);
+  }, [carouselApi]);
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video */}
+      {/* Background Carousel */}
       <div className="absolute inset-0 z-0">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster="/drone_shot.gif"
-        >
-          <source src="/drone_shot.mp4" type="video/mp4" />
-        </video>
+        <div className="h-full">
+          <Carousel className="h-full" opts={{ loop: true }} setApi={setCarouselApi}>
+            <CarouselContent className="h-full">
+              <CarouselItem className="h-full">
+                <img src="/hero/buddha.jpg" alt="Buddha" className="w-full h-full object-fit" />
+              </CarouselItem>
+              <CarouselItem className="h-full">
+                <img src="/hero/stupa.jpeg" alt="Stupa" className="w-full h-full object-fit" />
+              </CarouselItem>
+              <CarouselItem className="h-full">
+                <img src="/hero/buddha2.jpeg" alt="Buddha statue" className="w-full h-full object-fit" />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
+            <CarouselNext className="-right-4 md:-right-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
+          </Carousel>
+        </div>
       </div>
 
       {/* Content */}
