@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "When will selected participants be notified?",
-    a: "After registering on our website, you will receive a confirmation call. Selected participants will be notified by 25th of December, 2025.",
+    a: "After registering on our website, you’ll receive a confirmation call from our team within two weeks.",
   },
   {
     q: "What kind of food will be served for participants?",

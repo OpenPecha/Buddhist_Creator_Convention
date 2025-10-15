@@ -51,7 +51,7 @@ export const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight inline-block px-6 py-3 bg-primary/10 border border-primary/20 rounded-full backdrop-blur-sm text-primary-foreground">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight inline-block px-6 py-3 bg-primary/10 border border-primary/20 rounded-full backdrop-blur-sm text-primary-foreground">
             Buddhist Creators <span className="text-white">Convention</span>
           </h1>
 
@@ -60,7 +60,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
               <MapPin className="w-5 h-5" />
-              Wat Thai Magadh Buddhists Vipassana centre Bodhgaya, India
+              Wat Thai Magadh Buddhists Vipassana centre, Bodhgaya, India
             </span>
           </div>
 
