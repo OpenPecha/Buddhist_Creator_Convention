@@ -4,36 +4,86 @@ import { useEffect, useState } from "react";
 import { Calendar, MapPin } from "lucide-react";
 export const Hero = () => {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
 
   useEffect(() => {
     if (!carouselApi) return;
-    const id = setInterval(() => {
-      carouselApi.scrollNext();
-    }, 4000);
-    return () => clearInterval(id);
+    let timer: number | undefined;
+
+    const scheduleNext = () => {
+      timer = window.setTimeout(() => {
+        carouselApi.scrollNext();
+      }, 3000);
+    };
+
+    const onCycle = () => {
+      if (timer) window.clearTimeout(timer);
+      scheduleNext();
+    };
+
+    scheduleNext();
+    carouselApi.on("select", onCycle);
+    carouselApi.on("reInit", onCycle);
+
+    return () => {
+      if (timer) window.clearTimeout(timer);
+      carouselApi.off("select", onCycle);
+      carouselApi.off("reInit", onCycle);
+    };
   }, [carouselApi]);
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Carousel */}
       <div className="absolute inset-0 z-0">
         <div className="h-full">
-          <Carousel className="h-full" opts={{ loop: true }} setApi={setCarouselApi}>
-            <CarouselContent className="h-full">
-              <CarouselItem className="h-full">
-                <img src="/hero/stupa.png" alt="Buddha" className="object-contain object-center" />
-              </CarouselItem>
-              <CarouselItem className="h-full">
-                <img src="/hero/venue.png" alt="Buddha" className="object-fit object-center" />
-              </CarouselItem>
-              <CarouselItem className="h-full">
-                <img src="/hero/stupa1.png" alt="Stupa" className="object-fit object-center" />
-              </CarouselItem>
-              <CarouselItem className="h-full">
-                <img src="/hero/buddha.jpg" alt="Buddha statue" className="object-fit object-center" />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
-            <CarouselNext className="-right-4 md:-right-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
-          </Carousel>
+          {/* Mobile carousel */}
+          <div className="h-full md:hidden">
+            <Carousel className="h-full" opts={{ loop: true }} setApi={!isDesktop ? setCarouselApi : undefined}>
+              <CarouselContent className="h-full">
+                <CarouselItem className="h-full">
+                  <img src="/hero/mobile/1.png" alt="Slide 1" className="w-full h-full object-cover object-bottom" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/mobile/2.png" alt="Slide 2" className="w-full h-full object-cover object-bottom" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/mobile/3.png" alt="Slide 3" className="w-full h-full object-cover object-bottom" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/mobile/4.png" alt="Slide 4" className="w-full h-full object-cover object-bottom" />
+                </CarouselItem>
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+          {/* Desktop carousel */}
+          <div className="h-full hidden md:block">
+            <Carousel className="h-full" opts={{ loop: true }} setApi={isDesktop ? setCarouselApi : undefined}>
+              <CarouselContent className="h-full">
+                <CarouselItem className="h-full">
+                  <img src="/hero/desktop/1.png" alt="Slide 1" className="w-full h-full object-cover" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/desktop/2.png" alt="Slide 2" className="w-full h-full object-cover" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/desktop/3.png" alt="Slide 3" className="w-full h-full object-cover" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/desktop/4.png" alt="Slide 4" className="w-full h-full object-cover" />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
+              <CarouselNext className="-right-4 md:-right-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
+            </Carousel>
+          </div>
         </div>
         {/* Readability overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/40" />
