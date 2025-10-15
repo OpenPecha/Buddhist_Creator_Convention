@@ -28,7 +28,7 @@ export const Hero = () => {
                 <img src="/hero/stupa1.png" alt="Stupa" className="w-full h-full object-cover object-bottom" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/buddha2.jpeg" alt="Buddha statue" className="w-full h-full object-cover object-bottom" />
+                <img src="/hero/buddha.jpg" alt="Buddha statue" className="w-full h-full object-cover object-bottom" />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
