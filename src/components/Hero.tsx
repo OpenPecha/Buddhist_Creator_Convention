@@ -19,16 +19,16 @@ export const Hero = () => {
           <Carousel className="h-full" opts={{ loop: true }} setApi={setCarouselApi}>
             <CarouselContent className="h-full">
               <CarouselItem className="h-full">
-                <img src="/hero/stupa.png" alt="Buddha" className="w-full h-full object-cover object-bottom" />
+                <img src="/hero/stupa.png" alt="Buddha" className="object-contain object-center" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/venue.png" alt="Buddha" className="w-full h-full object-cover object-bottom" />
+                <img src="/hero/venue.png" alt="Buddha" className="object-fit object-center" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/stupa1.png" alt="Stupa" className="w-full h-full object-cover object-bottom" />
+                <img src="/hero/stupa1.png" alt="Stupa" className="object-fit object-center" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/buddha.jpg" alt="Buddha statue" className="w-full h-full object-cover object-bottom" />
+                <img src="/hero/buddha.jpg" alt="Buddha statue" className="object-fit object-center" />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
