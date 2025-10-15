@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "Is travel support available?",
-    a: "No, general travel costs are not covered. However, a limited number of selected applicants may receive travel assistance through our scholarship support program. This program is available to residents of Nepal, Bhutan, and India and covers AC3 train or bus travel only. Travel support is not available for participants outside the above-mentioned countries.",
+    a: "We're excited to offer financial travel assistance to a limited number of selected applicants through our scholarship support program! While general travel costs aren't included, this support is only applicable for residents of Nepal, Bhutan, and India, covering AC3 train or bus travel to help you attend.",
   },
   {
     q: "When will selected participants be notified?",
@@ -21,6 +21,10 @@ const faqs = [
   {
     q: "Will I be sharing a room with other participants?",
     a: "Yes. Accommodation will be provided on a shared basis to encourage community bonding and interaction among participants. Male and female participants will be accommodated separately.",
+  },
+  {
+    q: 'Is it mandatory to attend the entire workshop?',
+    a: 'Yes. Participants are required to attend all sessions throughout the workshop. Full participation ensures you gain the complete learning experience and benefit from every aspect of the program.'
   },
   {
     q: "What support is available after the convention ends?",

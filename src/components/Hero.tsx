@@ -19,19 +19,24 @@ export const Hero = () => {
           <Carousel className="h-full" opts={{ loop: true }} setApi={setCarouselApi}>
             <CarouselContent className="h-full">
               <CarouselItem className="h-full">
-                <img src="/hero/buddha.jpg" alt="Buddha" className="w-full h-full object-fit" />
+                <img src="/hero/stupa.png" alt="Buddha" className="w-full h-full object-cover object-bottom" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/stupa.jpeg" alt="Stupa" className="w-full h-full object-fit" />
+                <img src="/hero/venue.png" alt="Buddha" className="w-full h-full object-cover object-bottom" />
               </CarouselItem>
               <CarouselItem className="h-full">
-                <img src="/hero/buddha2.jpeg" alt="Buddha statue" className="w-full h-full object-fit" />
+                <img src="/hero/stupa1.png" alt="Stupa" className="w-full h-full object-cover object-bottom" />
+              </CarouselItem>
+              <CarouselItem className="h-full">
+                <img src="/hero/buddha2.jpeg" alt="Buddha statue" className="w-full h-full object-cover object-bottom" />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
             <CarouselNext className="-right-4 md:-right-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
           </Carousel>
         </div>
+        {/* Readability overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/40" />
       </div>
 
       {/* Content */}
