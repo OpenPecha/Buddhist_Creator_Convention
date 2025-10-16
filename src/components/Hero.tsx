@@ -21,7 +21,7 @@ export const Hero = () => {
     const scheduleNext = () => {
       timer = window.setTimeout(() => {
         carouselApi.scrollNext();
-      }, 3000);
+      }, 5000);
     };
 
     const onCycle = () => {
@@ -138,7 +138,7 @@ export const Hero = () => {
               <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">Register In 30s</a>
             </Button>
             <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-elevated text-lg px-8 py-6" asChild>
-              <a href="#timeline">Learn More</a>
+              <a href="#coaches">Learn More</a>
             </Button>
           </div>
 

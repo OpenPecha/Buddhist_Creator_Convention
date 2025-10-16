@@ -19,7 +19,7 @@ const coaches = [
 
 export const CoachesSection = () => {
   return (
-    <section className="py-24 bg-gradient-section">
+    <section id="coaches" className="py-24 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
