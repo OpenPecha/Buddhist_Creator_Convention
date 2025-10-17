@@ -4,17 +4,17 @@ import milanImage from "@/assets/milan.jpg";
 
 const coaches = [
   {
-    name: "Dr. Jaimin Shukla",
-    title: "Global Chief Marketing Officer",
-    image: drJaiminImage,
-    bio: "Dr. Jaimin Shukla is a Global Chief Marketing Officer with 14 years of experience driving exponential business growth through multi-channel marketing and technology. A former Shell-sponsored PhD from University College London, his research in advanced fuel systems is published internationally. He is also the founder of The School of Insights and author of Transform Every Moment, a guide to discovering hidden happiness and inner peace."
-  },
-  {
     name: "Milan Amin",
     title: "Senior Brand Strategist",
     image: milanImage,
-    bio: "With over 15 years in marketing and a decade in C-level leadership, Milan Amin has led global brand and strategy for multi-billion-dollar companies, where he spearheaded landmark Web3 partnerships with the biggest celebrities including Cristiano Ronaldo, Lionel Messi, Formula 1, The GRAMMYs, The Weeknd, and Cannes Film Festival. Based in Dubai, he advised over 30+ startups, governments, and multi-billion dollar global consultancies across the Crypto, AI, and FinTech sectors."
-  }
+    bio: "With over 15 years in marketing and a decade in C-level leadership, Milan has led global brand and strategy for multi-billion-dollar companies, spearheading landmark Web3 partnerships with Cristiano Ronaldo, Lionel Messi, Formula 1, The GRAMMYs, and the Cannes Film Festival. Based in Dubai, he has advised 30+ startups, governments, and global consultancies across Crypto, AI, and FinTech. He’s a Buddhist practitioner for eight years, and has trained under Theravāda masters in Thailand, completing several intense retreats and studied with Vajrayāna and Dzogchen teachers from Tibet and Nepal. A lifelong pilgrim, he has journeyed to Nepal, Wutaishan, Putuoshan, Tso Pema, Pharping, and Maratika Cave, undertaking yearly solo retreats devoted to realisation and compassion."
+  },
+  {
+    name: "Dr. Jaimin Shukla",
+    title: "Global Chief Marketing Officer",
+    image: drJaiminImage,
+    bio: "Dr. Jaimin Shukla is a Global Chief Marketing Officer with 14 years of experience driving exponential business growth through multi-channel marketing and technology. A Shell-sponsored PhD from University College London, his research in advanced fuel systems is published internationally. He is the founder of The School of Insights and author of Transform Every Moment. He’s also been a Buddhist practitioner for eight years, and has studied with Theravāda teachers in Thailand, Zen masters in Japan, and Vajrayāna teachers from Tibet, undertaking pilgrimages across Nepal, Char Dham, Bodhgaya, Wutaishan, and Padmasambhava’s sacred caves. Together with Milan, he has received the blessings of His Holiness the Dalai Lama and continues to travel annually on sacred retreats to share authentic Buddhist wisdom with the modern world."
+  },
 ];
 
 export const CoachesSection = () => {
