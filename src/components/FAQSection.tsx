@@ -34,7 +34,7 @@ const faqs = [
 
 export const FAQSection = () => {
   return (
-    <section className="pt-4 md:pt-2 pb-24 bg-background">
+    <section className="pt-4 md:pt-2 pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-4">

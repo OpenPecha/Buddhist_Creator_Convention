@@ -25,7 +25,7 @@ const audienceVisuals = [
 
 export const WhoIsThisForSection = () => {
   return (
-    <section className="py-24 bg-gradient-section">
+    <section className="py-16 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto space-y-12">
           {/* Section Header */}
@@ -69,10 +69,13 @@ export const WhoIsThisForSection = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
           </div>
+          <p className="text-center text-foreground/90 max-w-4xl mx-auto mt-4 text-lg md:text-xl">
+            We are pleased to offer sponsored accommodation, three daily meals, and all workshop materials free of charge. Additionally, travel scholarships will be granted to selected applicants.
+          </p>
           <Card className="p-8 bg-secondary/5 border-secondary/20 shadow-soft">
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { title: "Accommodation", image: "/accomodation.png", alt: "Comfortable accommodation rooms" },
+                { title: "Accommodation", image: "/accomodation.jpg", alt: "Comfortable accommodation rooms" },
                 { title: "Meals", image: "/meals.png", alt: "Nutritious meals served to attendees" },
                 { title: "Materials", image: "/materials.png", alt: "Workshop materials and stationery" },
                 { title: "Scholarship Support", image: "/scholarship.png", alt: "Scholarship support for travel" }

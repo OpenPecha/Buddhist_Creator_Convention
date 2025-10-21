@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import drJaiminImage from "@/assets/jaimin.jpg";
 import milanImage from "@/assets/milan.jpg";
 
@@ -17,9 +19,56 @@ const coaches = [
   },
 ];
 
+function CoachCard({ coach }: { coach: { name: string; title: string; image: string; bio: string } }) {
+  const [expanded, setExpanded] = useState(false);
+  const isTruncated = coach.bio.length > 180;
+
+  return (
+    <Card key={coach.name} className="p-8 hover:shadow-elevated transition-all duration-300 border-border/50">
+      <div className="flex flex-col items-center text-center space-y-6">
+        <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft">
+          <img 
+            src={coach.image} 
+            alt={`${coach.name} - ${coach.title}`}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+        <div className="space-y-2">
+          <h3 className="text-2xl font-bold text-foreground">
+            {coach.name}
+          </h3>
+          <p className="text-primary font-semibold">
+            {coach.title}
+          </p>
+        </div>
+        <p
+          className="text-muted-foreground leading-relaxed"
+          style={
+            expanded
+              ? undefined
+              : {
+                  display: "-webkit-box",
+                  WebkitLineClamp: 3,
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                }
+          }
+        >
+          {coach.bio}
+        </p>
+        {isTruncated && (
+          <Button variant="outline" size="sm" onClick={() => setExpanded((v) => !v)}>
+            {expanded ? "Read less" : "Read more"}
+          </Button>
+        )}
+      </div>
+    </Card>
+  );
+}
+
 export const CoachesSection = () => {
   return (
-    <section id="coaches" className="py-24 bg-gradient-section">
+    <section id="coaches" className="py-16 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
@@ -36,28 +85,7 @@ export const CoachesSection = () => {
           {/* Coaches Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {coaches.map((coach) => (
-              <Card key={coach.name} className="p-8 hover:shadow-elevated transition-all duration-300 border-border/50">
-                <div className="flex flex-col items-center text-center space-y-6">
-                  <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-soft">
-                    <img 
-                      src={coach.image} 
-                      alt={`${coach.name} - ${coach.title}`}
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-2xl font-bold text-foreground">
-                      {coach.name}
-                    </h3>
-                    <p className="text-primary font-semibold">
-                      {coach.title}
-                    </p>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {coach.bio}
-                  </p>
-                </div>
-              </Card>
+              <CoachCard key={coach.name} coach={coach} />
             ))}
           </div>
         </div>

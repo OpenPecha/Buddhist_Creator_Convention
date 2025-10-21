@@ -54,13 +54,13 @@ const features: FeatureItem[] = [
   }
 ];
 export const WhatYouGetSection = () => {
-  return <section id="what-you-get" className="py-24 bg-background">
+  return <section id="what-you-get" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              What You'll Get
+              What to Expect
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               In just one week, our experienced coaches will deliver an intensive hands-on program that will take you to a professional level

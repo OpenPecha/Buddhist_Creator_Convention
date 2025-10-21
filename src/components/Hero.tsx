@@ -90,7 +90,7 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-12 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Badge */}
           <div className="inline-block">
@@ -102,7 +102,7 @@ export const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight inline-block px-6 py-3 bg-primary/10 border border-primary/20 rounded-full backdrop-blur-sm text-primary-foreground">
-            Buddhist Creators <span className="text-white">Convention</span>
+            Buddhist Creators <span className="text-white">Convention 2026</span>
           </h1>
 
 
@@ -110,7 +110,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
               <MapPin className="w-5 h-5" />
-              Wat Thai Magadh Buddhists Vipassana centre, Bodhgaya, India
+              Wat Thai Magadh Buddhist Vipassana Centre, Bodhgaya, India
             </span>
           </div>
 
@@ -119,11 +119,11 @@ export const Hero = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
                 <div className="text-3xl md:text-4xl font-extrabold leading-none">100+</div>
-                <div className="mt-1 text-sm md:text-base opacity-90">Attendees</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Buddhist Creators</div>
               </div>
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
-                <div className="text-3xl md:text-4xl font-extrabold leading-none">10+</div>
-                <div className="mt-1 text-sm md:text-base opacity-90">Countries</div>
+                <div className="text-lg md:text-xl font-bold leading-snug">India, Nepal, Malaysia,</div>
+                <div className="mt-1 text-sm md:text-base opacity-90">Sri Lanka, and many more</div>
               </div>
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
                 <div className="text-3xl md:text-4xl font-extrabold leading-none">1M+</div>
@@ -138,7 +138,7 @@ export const Hero = () => {
               <a href="https://forms.gle/fjmqhZs2Ff1VxMap6" target="_blank" rel="noopener noreferrer">Register In 30s</a>
             </Button>
             <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-elevated text-lg px-8 py-6" asChild>
-              <a href="#coaches">Learn More</a>
+              <a href="#timeline">Learn More</a>
             </Button>
           </div>
 

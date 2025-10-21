@@ -76,13 +76,13 @@ export const AboutSection = () => {
       ]
     }
   ];
-  return <section id="timeline" className="py-24 bg-gradient-section">
+  return <section id="timeline" className="py-16 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {/* Section Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Timeline
+              Convention Program
             </h2>
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
           </div>
@@ -169,7 +169,7 @@ export const AboutSection = () => {
                             const desc = cleaned.slice(colonIndex + 1).trim();
                             return (
                               <li key={item}>
-                                <span className="font-semibold">{title}:</span> {desc}
+                                <span className="font-bold">{title}:</span> {desc}
                               </li>
                             );
                           }

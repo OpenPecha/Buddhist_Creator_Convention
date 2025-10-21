@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
 export const RegistrationSection = () => {
-  return <section id="registration" className="py-24 bg-background">
+  return <section id="registration" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           {/* Section Header */}
