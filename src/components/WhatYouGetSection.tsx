@@ -15,7 +15,7 @@ const features: FeatureItem[] = [
     title: "Expert Coaching",
     description: "7 days of intensive training by 2 senior marketing executives with proven techniques",
     image: "/what you will get/Expert Coaching.png",
-    alt: "Coach guiding attendees during a workshop"
+    alt: "Coach guiding attendees during a master class"
   },
   {
     icon: BookOpen,

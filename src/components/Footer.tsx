@@ -1,4 +1,4 @@
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail, ExternalLink, Youtube, Instagram, Facebook, Linkedin } from "lucide-react";
 export const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container mx-auto px-4">
@@ -11,6 +11,26 @@ export const Footer = () => {
                 <Mail className="w-5 h-5" />
                 hello@buddhistcreators.com
               </a>
+              <div>
+                <div className="flex flex-col gap-2">
+                  <a href="https://www.youtube.com/@BuddhistCreators" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                    <Youtube className="w-4 h-4" />
+                    YouTube
+                  </a>
+                  <a href="https://www.instagram.com/buddhist_creators/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                    <Instagram className="w-4 h-4" />
+                    Instagram
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61582543556233" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                    <Facebook className="w-4 h-4" />
+                    Facebook
+                  </a>
+                  <a href="https://www.linkedin.com/company/109359959/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                    <Linkedin className="w-4 h-4" />
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Address */}

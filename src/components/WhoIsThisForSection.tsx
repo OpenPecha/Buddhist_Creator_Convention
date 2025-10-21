@@ -70,14 +70,14 @@ export const WhoIsThisForSection = () => {
             <div className="w-24 h-1 bg-gradient-hero mx-auto rounded-full" />
           </div>
           <p className="text-center text-foreground/90 max-w-4xl mx-auto mt-4 text-lg md:text-xl">
-            We are pleased to offer sponsored accommodation, three daily meals, and all workshop materials free of charge. Additionally, travel scholarships will be granted to selected applicants.
+            We are pleased to offer sponsored accommodation, three daily meals, and all master class materials free of charge. Additionally, travel scholarships will be granted to selected applicants.
           </p>
           <Card className="p-8 bg-secondary/5 border-secondary/20 shadow-soft">
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 { title: "Accommodation", image: "/accomodation.jpg", alt: "Comfortable accommodation rooms" },
                 { title: "Meals", image: "/meals.png", alt: "Nutritious meals served to attendees" },
-                { title: "Materials", image: "/materials.png", alt: "Workshop materials and stationery" },
+                { title: "Materials", image: "/materials.png", alt: "master class materials and stationery" },
                 { title: "Scholarship Support", image: "/scholarship.png", alt: "Scholarship support for travel" }
               ].map((item) => (
                 <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background">

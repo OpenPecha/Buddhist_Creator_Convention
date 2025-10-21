@@ -9,13 +9,13 @@ const coaches = [
     name: "Milan Amin",
     title: "Senior Brand Strategist",
     image: milanImage,
-    bio: "With over 15 years in marketing and a decade in C-level leadership, Milan has led global brand and strategy for multi-billion-dollar companies, spearheading landmark Web3 partnerships with Cristiano Ronaldo, Lionel Messi, Formula 1, The GRAMMYs, and the Cannes Film Festival. Based in Dubai, he has advised 30+ startups, governments, and global consultancies across Crypto, AI, and FinTech. He’s a Buddhist practitioner for eight years, and has trained under Theravāda masters in Thailand, completing several intense retreats and studied with Vajrayāna and Dzogchen teachers from Tibet and Nepal. A lifelong pilgrim, he has journeyed to Nepal, Wutaishan, Putuoshan, Tso Pema, Pharping, and Maratika Cave, undertaking yearly solo retreats devoted to realisation and compassion."
+    bio: "With over <b>15 years in marketing</b> and a <b>decade in C-level leadership</b>, Milan has led <b>global brand and strategy</b> for multi-billion-dollar companies, spearheading <b>landmark Web3 partnerships</b> with Cristiano Ronaldo, Lionel Messi, Formula 1, The GRAMMYs, and the Cannes Film Festival. Based in Dubai, he has advised 30+ startups, governments, and global consultancies across Crypto, AI, and FinTech. He’s a <b>Buddhist practitioner for eight years</b>, and has <b>trained under Theravāda masters</b> in Thailand, completing several intense retreats and studied with <b>Vajrayāna and Dzogchen teachers</b> from Tibet and Nepal. A lifelong pilgrim, he has journeyed to Nepal, Wutaishan, Putuoshan, Tso Pema, Pharping, and Maratika Cave, undertaking yearly solo retreats devoted to realisation and compassion."
   },
   {
     name: "Dr. Jaimin Shukla",
     title: "Global Chief Marketing Officer",
     image: drJaiminImage,
-    bio: "Dr. Jaimin Shukla is a Global Chief Marketing Officer with 14 years of experience driving exponential business growth through multi-channel marketing and technology. A Shell-sponsored PhD from University College London, his research in advanced fuel systems is published internationally. He is the founder of The School of Insights and author of Transform Every Moment. He’s also been a Buddhist practitioner for eight years, and has studied with Theravāda teachers in Thailand, Zen masters in Japan, and Vajrayāna teachers from Tibet, undertaking pilgrimages across Nepal, Char Dham, Bodhgaya, Wutaishan, and Padmasambhava’s sacred caves. Together with Milan, he has received the blessings of His Holiness the Dalai Lama and continues to travel annually on sacred retreats to share authentic Buddhist wisdom with the modern world."
+    bio: "Dr. Jaimin Shukla is a <b>Global Chief Marketing Officer</b> with <b>14 years of experience</b> driving exponential business growth through multi-channel marketing and technology. A Shell-sponsored <b>PhD from University College London</b>, his research in advanced fuel systems is published internationally. He is the founder of <b>The School of Insights</b> and author of <b>Transform Every Moment</b>. He’s also been a <b>Buddhist practitioner for eight years</b>, and has studied with <b>Theravāda teachers in Thailand, Zen masters in Japan, and Vajrayāna teachers from Tibet</b>, undertaking pilgrimages across Nepal, Char Dham, Bodhgaya, Wutaishan, and Padmasambhava’s sacred caves. Together with Milan, he has received the <b>blessings of His Holiness the Dalai Lama</b> and continues to travel annually on sacred retreats to <b>share authentic Buddhist wisdom with the modern world</b>."
   },
 ];
 
@@ -53,9 +53,8 @@ function CoachCard({ coach }: { coach: { name: string; title: string; image: str
                   overflow: "hidden",
                 }
           }
-        >
-          {coach.bio}
-        </p>
+          dangerouslySetInnerHTML={{ __html: coach.bio }}
+        />
         {isTruncated && (
           <Button variant="outline" size="sm" onClick={() => setExpanded((v) => !v)}>
             {expanded ? "Read less" : "Read more"}

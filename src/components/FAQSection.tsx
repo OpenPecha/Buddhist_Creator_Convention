@@ -16,15 +16,15 @@ const faqs = [
   },
   {
     q: "What kind of food will be served for participants?",
-    a: "The program provides free accommodation at the venue, vegetarian meals three times a day, and all workshop materials.",
+    a: "The program provides free accommodation at the venue, vegetarian meals three times a day, and all master class materials.",
   },
   {
     q: "Will I be sharing a room with other participants?",
     a: "Yes. Accommodation will be provided on a shared basis to encourage community bonding and interaction among participants. Male and female participants will be accommodated separately.",
   },
   {
-    q: 'Is it mandatory to attend the entire workshop?',
-    a: 'Yes. Participants are required to attend all sessions throughout the workshop. Full participation ensures you gain the complete learning experience and benefit from every aspect of the program.'
+    q: 'Is it mandatory to attend the entire convention?',
+    a: 'Yes. Participants are required to attend all sessions throughout the convention. Full participation ensures you gain the complete learning experience and benefit from every aspect of the program.'
   },
   {
     q: "What support is available after the convention ends?",
