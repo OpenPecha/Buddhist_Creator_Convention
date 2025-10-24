@@ -108,7 +108,7 @@ export const AboutSection = () => {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
-                      <img src="/drone_shot.gif" alt="Venue aerial view for registration day" className="w-full h-full object-cover" loading="lazy" />
+                      <img src="/drone_shot.png" alt="Venue aerial view for registration day" className="w-full h-full object-cover" loading="lazy" />
                     </div>
                   </div>
                   <div style={{ marginLeft: '20px' }}>
