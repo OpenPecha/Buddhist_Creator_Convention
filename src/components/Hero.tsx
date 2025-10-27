@@ -53,6 +53,9 @@ export const Hero = () => {
                 <CarouselItem className="h-full">
                   <img src="/hero/mobile/2.png" alt="Slide 2" className=" h-screen object-cover " />
                 </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/mobile/3.png" alt="Slide 3" className=" h-screen object-cover" />
+                </CarouselItem>
               </CarouselContent>
             </Carousel>
           </div>
@@ -66,6 +69,9 @@ export const Hero = () => {
                 </CarouselItem>
                 <CarouselItem className="h-full">
                   <img src="/hero/desktop/2.png" alt="Slide 2" className="w-full h-full object-cover" />
+                </CarouselItem>
+                <CarouselItem className="h-full">
+                  <img src="/hero/desktop/3.png" alt="Slide 3" className="w-full h-full object-cover" />
                 </CarouselItem>
               </CarouselContent>
               <CarouselPrevious className="-left-4 md:-left-12 bg-background/60 backdrop-blur-sm hover:bg-background/80" />
