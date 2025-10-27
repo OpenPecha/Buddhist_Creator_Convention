@@ -110,7 +110,7 @@ export const Hero = () => {
                 <div className="mt-1 text-sm md:text-base opacity-90">Buddhist Creators</div>
               </div>
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
-                <div className="text-lg md:text-xl font-bold leading-snug">India, Nepal, Malaysia,</div>
+                <div className="text-lg md:text-xl font-bold leading-snug">From India, Nepal, Malaysia,</div>
                 <div className="mt-1 text-sm md:text-base opacity-90">Sri Lanka, and many more</div>
               </div>
               <div className="rounded-xl border border-primary-foreground/20 bg-primary/10 backdrop-blur-md p-4 text-primary-foreground shadow-elevated">
