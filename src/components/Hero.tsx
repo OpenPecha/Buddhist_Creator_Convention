@@ -48,13 +48,13 @@ export const Hero = () => {
             <Carousel className="h-screen" opts={{ loop: true }} setApi={!isDesktop ? setCarouselApi : undefined}>
               <CarouselContent className="h-full">
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/1.png" alt="Slide 1" className="w-full h-screen object-cover object-center" />
+                  <img src="/hero/mobile/1.jpg" alt="Slide 1" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/2.png" alt="Slide 2" className="w-full h-screen object-cover object-center" />
+                  <img src="/hero/mobile/2.jpg" alt="Slide 2" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/3.png" alt="Slide 3" className="w-full h-screen object-cover object-center" />
+                  <img src="/hero/mobile/3.jpg" alt="Slide 3" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
               </CarouselContent>
             </Carousel>
