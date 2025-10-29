@@ -39,7 +39,7 @@ export const Hero = () => {
       carouselApi.off("reInit", onCycle);
     };
   }, [carouselApi]);
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative h-auto min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Carousel */}
       <div className="absolute inset-0 z-0">
         <div className="h-full">
@@ -48,13 +48,13 @@ export const Hero = () => {
             <Carousel className="h-screen" opts={{ loop: true }} setApi={!isDesktop ? setCarouselApi : undefined}>
               <CarouselContent className="h-full">
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/1.png" alt="Slide 1" className=" h-screen object-cover " />
+                  <img src="/hero/mobile/1.png" alt="Slide 1" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/2.png" alt="Slide 2" className=" h-screen object-cover " />
+                  <img src="/hero/mobile/2.png" alt="Slide 2" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
                 <CarouselItem className="h-full">
-                  <img src="/hero/mobile/3.png" alt="Slide 3" className=" h-screen object-cover" />
+                  <img src="/hero/mobile/3.png" alt="Slide 3" className="w-full h-screen object-cover object-center" />
                 </CarouselItem>
               </CarouselContent>
             </Carousel>
@@ -84,8 +84,8 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-12 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 pt-12">
+      <div className="relative z-10 container mx-auto px-4 py-8 md:py-12 text-center">
+        <div className="max-w-4xl mx-auto space-y-4 md:space-y-8 pt-8 md:pt-12">
           {/* Badge */}
           <div className="inline-block">
             <span className="inline-flex items-center gap-2 px-6 py-2 bg-primary/10 border border-primary/20 rounded-full text-white font-medium backdrop-blur-sm">
