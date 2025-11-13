@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://buddhistcreators.com//sitemap.xml
+Sitemap: https://buddhistcreators.com/sitemap.xml
