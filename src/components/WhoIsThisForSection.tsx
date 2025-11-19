@@ -43,9 +43,9 @@ export const WhoIsThisForSection = () => {
           <Card className="p-6 md:p-10 shadow-soft border-border/50">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {audienceVisuals.map((item) => (
-                <div key={item.title} className="rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition">
+                <div key={item.title} className="rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg cursor-pointer group">
                   <div className="aspect-[3/4] w-full overflow-hidden">
-                    <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover" loading="lazy" />
+                    <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
                   </div>
                   <div className="p-3 text-center">
                     <p className="text-sm md:text-base text-foreground/90 font-medium">{item.title}</p>
@@ -80,9 +80,9 @@ export const WhoIsThisForSection = () => {
                 { title: "Materials", image: "/materials.png", alt: "master class materials and stationery" },
                 { title: "Scholarship Support", image: "/scholarship.png", alt: "Scholarship support for travel" }
               ].map((item) => (
-                <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background">
+                <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:border-primary/30 cursor-pointer group">
                   <div className="aspect-[3/4] w-full overflow-hidden">
-                    <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover" loading="lazy" />
+                    <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
                   </div>
                   <div className="p-4 text-center">
                     <p className="text-foreground font-medium">{item.title}</p>

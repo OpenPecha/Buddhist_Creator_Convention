@@ -73,19 +73,19 @@ export const WhatYouGetSection = () => {
             {features.map((feature) => {
               const Icon = feature.icon;
               return (
-                <Card key={feature.title} className="overflow-hidden hover:shadow-elevated transition-all duration-300 border-border/50 hover:border-primary/30">
+                <Card key={feature.title} className="overflow-hidden hover:shadow-elevated transition-all duration-300 border-border/50 hover:border-primary/30 hover:scale-105 hover:-translate-y-1 cursor-pointer group">
                   {feature.image && (
                     <div className="aspect-[3/4] w-full overflow-hidden">
                       <img
                         src={feature.image}
                         alt={feature.alt ?? feature.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         loading="lazy"
                       />
                     </div>
                   )}
                   <div className="p-6 space-y-4">
-                    <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110">
                       <Icon className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <h3 className="text-xl font-bold text-foreground">{feature.title}</h3>
