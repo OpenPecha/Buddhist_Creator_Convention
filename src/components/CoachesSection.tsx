@@ -87,6 +87,22 @@ export const CoachesSection = () => {
               <CoachCard key={coach.name} coach={coach} />
             ))}
           </div>
+
+          {/* Video Section */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="aspect-video w-full rounded-lg overflow-hidden shadow-elevated border border-border/50">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/tJEF8xSyzXA"
+                title="YouTube video player"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
