@@ -26,8 +26,11 @@ export const RegistrationSection = () => {
                     <ExternalLink className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm text-lg px-8" asChild>
-                  
+                <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-lg text-lg px-8" asChild>
+                  <a href="https://forms.gle/v84KfqtioFnQPjXa9" target="_blank" rel="noopener noreferrer">
+                    Apply for Travel Scholarship
+                    <ExternalLink className="ml-2 w-5 h-5" />
+                  </a>
                 </Button>
               </div>
               <p className="text-primary-foreground/90 font-medium">
