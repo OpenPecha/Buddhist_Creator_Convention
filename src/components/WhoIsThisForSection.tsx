@@ -80,14 +80,33 @@ export const WhoIsThisForSection = () => {
                 { title: "Materials", image: "/materials.png", alt: "master class materials and stationery" },
                 { title: "Scholarship Support", image: "/scholarship.png", alt: "Scholarship support for travel" }
               ].map((item) => (
-                <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:border-primary/30 cursor-pointer group">
-                  <div className="aspect-[3/4] w-full overflow-hidden">
-                    <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+                item.title === "Scholarship Support" ? (
+                  <a
+                    key={item.title}
+                    href="https://forms.gle/v84KfqtioFnQPjXa9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="rounded-xl overflow-hidden border border-secondary/20 bg-background transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:border-primary/30 cursor-pointer group">
+                      <div className="aspect-[3/4] w-full overflow-hidden">
+                        <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+                      </div>
+                      <div className="p-4 text-center">
+                        <p className="text-foreground font-medium">{item.title}</p>
+                      </div>
+                    </div>
+                  </a>
+                ) : (
+                  <div key={item.title} className="rounded-xl overflow-hidden border border-secondary/20 bg-background transition-all duration-300 hover:scale-105 hover:-translate-y-2 hover:shadow-lg hover:border-primary/30 cursor-pointer group">
+                    <div className="aspect-[3/4] w-full overflow-hidden">
+                      <img src={item.image} alt={item.alt ?? item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" />
+                    </div>
+                    <div className="p-4 text-center">
+                      <p className="text-foreground font-medium">{item.title}</p>
+                    </div>
                   </div>
-                  <div className="p-4 text-center">
-                    <p className="text-foreground font-medium">{item.title}</p>
-                  </div>
-                </div>
+                )
               ))}
             </div>
           </Card>
