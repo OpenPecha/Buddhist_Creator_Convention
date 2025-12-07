@@ -104,7 +104,7 @@ export const Hero = () => {
           <div className="flex items-center justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary-foreground/90 backdrop-blur-sm">
               <MapPin className="w-5 h-5" />
-              Wat Thai, Bodhgaya, India
+              Shechen Monastery, Bodhgaya, India
             </span>
           </div>
 
