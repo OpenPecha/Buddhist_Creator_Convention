@@ -104,7 +104,7 @@ export const AboutSection = () => {
             {/* Day 0 */}
             <TabsContent value="day0">
               <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                <h3 className="text-2xl font-bold mb-4">Day 1 — Welcome & Registration</h3>
+                <h3 className="text-2xl font-bold mb-4">Day 1 — Registration & Opening Ceremony</h3>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
