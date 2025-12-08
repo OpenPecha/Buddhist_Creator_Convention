@@ -139,12 +139,7 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="pt-12 animate-bounce">
-            <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full mx-auto flex items-start justify-center p-2">
-              <div className="w-1 h-3 bg-primary-foreground/50 rounded-full" />
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>;

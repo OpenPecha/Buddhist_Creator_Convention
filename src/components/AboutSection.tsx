@@ -59,7 +59,7 @@ export const AboutSection = () => {
     },
     {
       day: 7,
-      title: "Monetisation and Presence",
+      title: "Sustainability and Presence",
       bullets: [
         "<b>Compassionate Monetization:</b>Redefine monetisation as compassion in action building sustainable support for your Dharma work.",
         "<b>On-Camera Presence:</b>Strengthen your presence on camera, turning nervousness into service and energy into connection.",
