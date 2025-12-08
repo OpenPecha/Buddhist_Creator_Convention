@@ -23,7 +23,7 @@ export const AboutSection = () => {
     },
     {
       day: 3,
-      title: "The Art of Validation: Knowing What the World Needs",
+      title: "Knowing What the World Needs",
       bullets: [
         "<b>Creating Content That Resonates:</b>Learn how to stop guessing and start creating content that truly resonates through real-world validation.",
         "<b>Truth, Demand, and Audience:</b>Discover the three layers of alignment — your lived truth, market demand, and your audience’s voice.",
@@ -41,7 +41,7 @@ export const AboutSection = () => {
     },
     {
       day: 5,
-      title: "Amplification: Working with AI as Your Dharma Assistant",
+      title: "Working with AI as Your Dharma Assistant",
       bullets: [
         "<b>AI as Your Creative Partner:</b>Transform AI from a generic tool into your creative partner — helping you script, refine, and validate content faster.",
         "<b>Training Your AI:</b>Learn how to train AI with your own teachings, principles, and insights to reflect your authentic voice.",
@@ -50,7 +50,7 @@ export const AboutSection = () => {
     },
     {
       day: 6,
-      title: "Growth and Momentum: Virality through Consistency",
+      title: "Virality through Consistency",
       bullets: [
         "<b>The Science of Virality:</b>Understand the true science of virality — how ethical resonance spreads faster than trends.",
         "<b>The Power of 1% Improvements:</b>Build a rhythm of consistency that sustains your growth through small, steady 1% improvements.",
@@ -59,7 +59,7 @@ export const AboutSection = () => {
     },
     {
       day: 7,
-      title: "Sustainability: Monetisation and Presence",
+      title: "Monetisation and Presence",
       bullets: [
         "<b>Compassionate Monetization:</b>Redefine monetisation as compassion in action building sustainable support for your Dharma work.",
         "<b>On-Camera Presence:</b>Strengthen your presence on camera, turning nervousness into service and energy into connection.",
@@ -68,7 +68,7 @@ export const AboutSection = () => {
     },
     {
       day: 8,
-      title: "The Great Recap: Integrating Wisdom into Action",
+      title: "Integrating Wisdom into Action",
       bullets: [
         "<b>Revisit Six Days of Transformation:</b> A full guided review of everything learned from storytelling and validation to AI, virality, and presence.",
         "<b>Anchor the Teachings in Practice:</b> Reflect, ground, and integrate your journey to become a true Digital Bodhisattva.",
@@ -90,21 +90,21 @@ export const AboutSection = () => {
           {/* Timeline Tabs */}
           <Tabs defaultValue="day0" className="w-full">
             <TabsList className="flex gap-2 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:overflow-visible px-4 py-1 w-full justify-start sm:justify-center scroll-pl-4">
-              <TabsTrigger value="day0" className="shrink-0">Day 0</TabsTrigger>
-              <TabsTrigger value="day1" className="shrink-0">Day 1</TabsTrigger>
-              <TabsTrigger value="day2" className="shrink-0">Day 2</TabsTrigger>
-              <TabsTrigger value="day3" className="shrink-0">Day 3</TabsTrigger>
-              <TabsTrigger value="day4" className="shrink-0">Day 4</TabsTrigger>
-              <TabsTrigger value="day5" className="shrink-0">Day 5</TabsTrigger>
-              <TabsTrigger value="day6" className="shrink-0">Day 6</TabsTrigger>
-              <TabsTrigger value="day7" className="shrink-0">Day 7</TabsTrigger>
-              <TabsTrigger value="day8" className="shrink-0">Day 8</TabsTrigger>
+              <TabsTrigger value="day0" className="shrink-0">Jan 29</TabsTrigger>
+              <TabsTrigger value="day1" className="shrink-0">Jan 30</TabsTrigger>
+              <TabsTrigger value="day2" className="shrink-0">Jan 31</TabsTrigger>
+              <TabsTrigger value="day3" className="shrink-0">Feb 1</TabsTrigger>
+              <TabsTrigger value="day4" className="shrink-0">Feb 2</TabsTrigger>
+              <TabsTrigger value="day5" className="shrink-0">Feb 3</TabsTrigger>
+              <TabsTrigger value="day6" className="shrink-0">Feb 4</TabsTrigger>
+              <TabsTrigger value="day7" className="shrink-0">Feb 5</TabsTrigger>
+              <TabsTrigger value="day8" className="shrink-0">Feb 6</TabsTrigger>
             </TabsList>
 
             {/* Day 0 */}
             <TabsContent value="day0">
               <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                <h3 className="text-2xl font-bold mb-4">Day 0 — Welcome & Registration</h3>
+                <h3 className="text-2xl font-bold mb-4">Day 1 — Welcome & Registration</h3>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
@@ -126,7 +126,7 @@ export const AboutSection = () => {
             {/* Day 1 */}
             <TabsContent value="day1">
               <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                <h3 className="text-2xl font-bold mb-4">Day 1 — Community Day</h3>
+                <h3 className="text-2xl font-bold mb-4">Day 2 — Community Day</h3>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="overflow-hidden rounded-lg">
                     <div className="aspect-[16/9] w-full overflow-hidden">
@@ -152,7 +152,7 @@ export const AboutSection = () => {
             {masterclassDays.map(({ day, title, bullets }) => (
               <TabsContent key={`day${day}`} value={`day${day}`}>
                 <Card className="p-6 md:p-8 shadow-soft border-border/50">
-                  <h3 className="text-2xl font-bold mb-4">Day {day} — {title}</h3>
+                  <h3 className="text-2xl font-bold mb-4">Day {day+1} — {title}</h3>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <div className="overflow-hidden rounded-lg">
                       <div className="aspect-[16/9] w-full overflow-hidden">
