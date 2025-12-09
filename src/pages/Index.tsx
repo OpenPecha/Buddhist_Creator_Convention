@@ -45,8 +45,8 @@ const Index = () => {
       <AboutSection />
       <CoachesSection />
       <WhatYouGetSection />
-      <WhoIsThisForSection />
       <AwardsSection />
+      <WhoIsThisForSection />
       <RegistrationSection />
       <FAQSection />
       <Footer />
