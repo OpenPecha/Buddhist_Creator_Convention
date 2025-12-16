@@ -5,6 +5,7 @@ import { WhatYouGetSection } from "@/components/WhatYouGetSection";
 import { CoachesSection } from "@/components/CoachesSection";
 import { WhoIsThisForSection } from "@/components/WhoIsThisForSection";
 import { AwardsSection } from "@/components/AwardsSection";
+import { CollaboratorsSection } from "@/components/CollaboratorsSection";
 import { RegistrationSection } from "@/components/RegistrationSection";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -46,6 +47,7 @@ const Index = () => {
       <CoachesSection />
       <WhatYouGetSection />
       <AwardsSection />
+      <CollaboratorsSection />
       <WhoIsThisForSection />
       <RegistrationSection />
       <FAQSection />
