@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Award, Star, Trophy, Sparkles } from "lucide-react";
+import { Award, Star, Sparkles } from "lucide-react";
 
 export const AwardsSection = () => {
   return (
@@ -24,8 +24,12 @@ export const AwardsSection = () => {
               <div className="flex justify-center">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-hero opacity-20 blur-3xl rounded-full" />
-                  <div className="relative bg-gradient-hero rounded-full p-12 shadow-elevated">
-                    <Trophy className="w-32 h-32 text-primary-foreground" strokeWidth={1.5} />
+                  <div className="relative rounded-full shadow-elevated overflow-hidden w-64 h-64">
+                    <img 
+                      src="/award.png" 
+                      alt="Buddhist Influencer Award" 
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
                   <div className="absolute -top-4 -right-4">
                     <Sparkles className="w-12 h-12 text-primary animate-pulse" />
