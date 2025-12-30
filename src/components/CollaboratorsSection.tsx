@@ -14,6 +14,11 @@ const collaborators = [
     logo: "/collaborators/openpecha-logo.png",
     alt: "OpenPecha Logo"
   },
+  {
+    name: "Indrajala",
+    logo: "/collaborators/indrajala_logo.png",
+    alt: "Indrajala Logo"
+  },
 ];
 
 export const CollaboratorsSection = () => {
