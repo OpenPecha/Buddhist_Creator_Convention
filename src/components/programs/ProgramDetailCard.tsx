@@ -31,7 +31,7 @@ export const ProgramDetailCard = ({ title, description, bullets, image, to, ctaL
               </li>
             ))}
           </ul>
-          <Link to={to} className="inline-flex items-center gap-1.5 text-primary font-semibold pt-1 hover:gap-2.5 transition-all">
+          <Link to={to} className="inline-flex items-center gap-1.5 py-2 text-primary font-semibold hover:gap-2.5 transition-all">
             {ctaLabel} <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

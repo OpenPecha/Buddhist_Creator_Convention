@@ -33,7 +33,7 @@ const Programs = () => {
             description="A global award ceremony honoring the Buddhist creator who best represents the movement's voice to the world that year."
             bullets={["Presented at the Convention's closing ceremony", "Recognizes impact, integrity, and reach", "The recipient serves as the movement's ambassador for the year"]}
             image="/images/home/award-ceremony.jpg"
-            to="/convention#awards"
+            to="/awards"
             ctaLabel="Meet the Winners"
             reverse
             delay={80}

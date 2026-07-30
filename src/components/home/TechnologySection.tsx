@@ -36,9 +36,17 @@ export const TechnologySection = () => {
               An AI-guided companion for daily practice and content creation, built with Buddhist creators in mind —
               from scripting challenge reels to studying the Bodhicharyavatara, verse by verse.
             </p>
-            <div className="flex gap-3 pt-1">
-              <img src="/images/brand/app-store-badge.png" alt="Download on the App Store" className="h-11 w-auto" />
-              <img src="/images/brand/google-play-badge.png" alt="Get it on Google Play" className="h-11 w-auto" />
+            <div className="flex flex-wrap gap-3 pt-1">
+              <img
+                src="/images/brand/app-store-badge.png"
+                alt="Download on the App Store"
+                className="h-10 sm:h-11 w-auto max-w-full shrink-0 object-contain"
+              />
+              <img
+                src="/images/brand/google-play-badge.png"
+                alt="Get it on Google Play"
+                className="h-10 sm:h-11 w-auto max-w-full shrink-0 object-contain"
+              />
             </div>
           </Reveal>
         </div>

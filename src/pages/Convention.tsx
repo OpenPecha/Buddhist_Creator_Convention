@@ -1,5 +1,6 @@
 import { usePageMeta } from "@/hooks/use-page-meta";
 import { ConventionHero } from "@/components/convention/ConventionHero";
+import { DocumentaryFeature } from "@/components/shared/DocumentaryFeature";
 import { ConventionPillars } from "@/components/convention/ConventionPillars";
 import { ProgramArchive } from "@/components/convention/ProgramArchive";
 import { PhaseHighlight } from "@/components/convention/PhaseHighlight";
@@ -18,11 +19,12 @@ const Convention = () => {
   return (
     <div>
       <ConventionHero />
+      <DocumentaryFeature />
       <ConventionPillars />
+      <AwardsSection />
       <ProgramArchive />
       <PhaseHighlight />
       <ConventionGallery />
-      <AwardsSection />
       <CoachesRecap />
       <NextConvention />
       <ConventionFAQ />

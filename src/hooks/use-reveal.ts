@@ -3,8 +3,12 @@ import { useEffect, useRef, useState } from "react";
 /**
  * Reveals an element with a fade-up animation the first time it scrolls into view.
  * Respects prefers-reduced-motion by rendering as already visible.
+ *
+ * Fires on any intersection rather than a percentage of the element, because on
+ * narrow screens content stacks tall enough that a percentage threshold may never
+ * be reached — which would leave the block permanently invisible.
  */
-export function useReveal<T extends HTMLElement>(threshold = 0.2) {
+export function useReveal<T extends HTMLElement>(rootMargin = "0px 0px -12% 0px") {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -13,7 +17,7 @@ export function useReveal<T extends HTMLElement>(threshold = 0.2) {
     if (!node) return;
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) {
+    if (prefersReducedMotion || typeof IntersectionObserver === "undefined") {
       setIsVisible(true);
       return;
     }
@@ -25,12 +29,12 @@ export function useReveal<T extends HTMLElement>(threshold = 0.2) {
           observer.disconnect();
         }
       },
-      { threshold }
+      { threshold: 0, rootMargin }
     );
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [threshold]);
+  }, [rootMargin]);
 
   return { ref, isVisible };
 }

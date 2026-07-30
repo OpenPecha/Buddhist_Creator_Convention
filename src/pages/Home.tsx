@@ -1,6 +1,8 @@
 import { usePageMeta } from "@/hooks/use-page-meta";
 import { HomeHero } from "@/components/home/HomeHero";
 import { StatsStrip } from "@/components/home/StatsStrip";
+import { AwardsSpotlight } from "@/components/home/AwardsSpotlight";
+import { DocumentaryFeature } from "@/components/shared/DocumentaryFeature";
 import { MissionTeaser } from "@/components/home/MissionTeaser";
 import { ProgramsTeaser } from "@/components/home/ProgramsTeaser";
 import { UpcomingEvents } from "@/components/home/UpcomingEvents";
@@ -22,6 +24,8 @@ const Home = () => {
     <div>
       <HomeHero />
       <StatsStrip />
+      <AwardsSpotlight />
+      <DocumentaryFeature />
       <MissionTeaser />
       <ProgramsTeaser />
       <UpcomingEvents />

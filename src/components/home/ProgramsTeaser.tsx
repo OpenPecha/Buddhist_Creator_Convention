@@ -16,7 +16,7 @@ const PROGRAMS = [
     description:
       "A global award ceremony honoring the creator who best represents the movement's voice to the world that year.",
     image: "/images/home/award-ceremony.jpg",
-    to: "/convention#awards",
+    to: "/awards",
   },
   {
     title: "WeBuddhist Influencer Masterclass",

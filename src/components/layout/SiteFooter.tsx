@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Youtube, Instagram, Facebook, Linkedin } from "lucide-react";
+import { documentaryWatchUrl } from "@/data/documentary";
 
 export const SiteFooter = () => {
   const year = new Date().getFullYear();
@@ -21,21 +22,30 @@ export const SiteFooter = () => {
 
             <div className="space-y-3">
               <h3 className="text-base font-semibold">Explore</h3>
-              <nav className="flex flex-col gap-2 text-sm text-secondary-foreground/80">
+              <nav className="flex flex-col text-sm text-secondary-foreground/80 [&>*]:py-2 md:[&>*]:py-1">
                 <Link to="/about" className="hover:text-primary-light transition-colors">About</Link>
                 <Link to="/programs" className="hover:text-primary-light transition-colors">Programs</Link>
                 <Link to="/convention" className="hover:text-primary-light transition-colors">Convention</Link>
+                <Link to="/awards" className="hover:text-primary-light transition-colors">Awards & Winners</Link>
+                <a
+                  href={documentaryWatchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-light transition-colors"
+                >
+                  Watch the Documentary
+                </a>
                 <a href="/#newsletter" className="hover:text-primary-light transition-colors">Get Involved</a>
               </nav>
             </div>
 
             <div className="space-y-3">
               <h3 className="text-base font-semibold">Contact</h3>
-              <a href="mailto:hello@buddhistcreators.com" className="flex items-center gap-2 text-sm hover:text-primary-light transition-colors">
-                <Mail className="w-4 h-4" />
+              <a href="mailto:hello@buddhistcreators.com" className="flex items-center gap-2 py-2 text-sm break-all hover:text-primary-light transition-colors md:py-1">
+                <Mail className="w-4 h-4 shrink-0" />
                 hello@buddhistcreators.com
               </a>
-              <div className="flex flex-col gap-2 text-sm">
+              <div className="flex flex-col text-sm [&>*]:py-2 md:[&>*]:py-1">
                 <a href="https://www.youtube.com/@BuddhistCreators" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <Youtube className="w-4 h-4" /> YouTube
                 </a>
@@ -59,7 +69,7 @@ export const SiteFooter = () => {
                 <p>Near Delek Hospital, Khara Danda Road</p>
                 <p>Dharamshala, Distt Kangra, HP 176215</p>
               </address>
-              <a href="https://dharmaduta.in/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-primary-light transition-colors">
+              <a href="https://dharmaduta.in/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 py-2 text-sm hover:text-primary-light transition-colors md:py-1">
                 <ExternalLink className="w-4 h-4" /> dharmaduta.in
               </a>
             </div>

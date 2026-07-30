@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "About", to: "/about" },
   { label: "Programs", to: "/programs" },
   { label: "Convention", to: "/convention" },
+  { label: "Awards", to: "/awards" },
 ];
 
 export const SiteHeader = () => {
@@ -22,6 +23,16 @@ export const SiteHeader = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Stop the page scrolling behind the open mobile drawer.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [menuOpen]);
+
   const showSolid = scrolled || menuOpen;
 
   return (
@@ -31,16 +42,16 @@ export const SiteHeader = () => {
         showSolid ? "bg-background/90 backdrop-blur-md border-b border-border shadow-soft" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
-        <Link to="/" aria-label="Buddhist Creators home" className="flex items-center gap-2 shrink-0">
+      <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between gap-3">
+        <Link to="/" aria-label="Buddhist Creators home" className="flex items-center gap-2 min-w-0 shrink">
           <img
             src={showSolid ? "/images/brand/logo-dark.png" : "/images/brand/logo.png"}
             alt="Buddhist Creators"
-            className="h-9 md:h-11 w-auto transition-opacity"
+            className="h-9 md:h-11 w-auto shrink-0 transition-opacity"
           />
           <span
             className={cn(
-              "font-display text-lg md:text-xl font-semibold tracking-tight transition-colors",
+              "font-display text-base sm:text-lg md:text-xl font-semibold tracking-tight truncate transition-colors",
               showSolid ? "text-foreground" : "text-white drop-shadow-sm"
             )}
           >
@@ -48,7 +59,7 @@ export const SiteHeader = () => {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.to}
@@ -56,7 +67,7 @@ export const SiteHeader = () => {
               end={link.to === "/"}
               className={({ isActive }) =>
                 cn(
-                  "px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                  "px-3 xl:px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors",
                   showSolid
                     ? isActive
                       ? "bg-primary/10 text-primary"
@@ -72,7 +83,7 @@ export const SiteHeader = () => {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block shrink-0">
           <Button
             className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated rounded-full px-6"
             asChild
@@ -84,9 +95,10 @@ export const SiteHeader = () => {
         <button
           type="button"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
           className={cn(
-            "md:hidden p-2 rounded-md transition-colors",
+            "lg:hidden -mr-2 shrink-0 p-3 rounded-md transition-colors",
             showSolid ? "text-foreground" : "text-white"
           )}
         >
@@ -95,7 +107,7 @@ export const SiteHeader = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-background border-t border-border shadow-elevated">
+        <div className="lg:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain bg-background border-t border-border shadow-elevated md:max-h-[calc(100dvh-5rem)]">
           <nav className="container mx-auto px-4 py-4 flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
               <NavLink
