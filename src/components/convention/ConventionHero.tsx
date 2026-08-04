@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { REPORT_PDF_PATH } from "@/data/impact";
 
 const SLIDES = [
   { src: "/images/convention/hero-1.jpg", alt: "Buddhist Creators Convention 2026 stage in Bodh Gaya" },
@@ -10,9 +11,9 @@ const SLIDES = [
 ];
 
 const STATS = [
-  { value: "110+", label: "Creators" },
-  { value: "9", label: "Days" },
-  { value: "1st", label: "Global Sangha" },
+  { value: "110", label: "Creators" },
+  { value: "10", label: "Countries" },
+  { value: "Bodh Gaya", label: "Location" },
 ];
 
 export const ConventionHero = () => {
@@ -58,7 +59,7 @@ export const ConventionHero = () => {
           </div>
           <div className="pt-4">
             <Button size="lg" variant="outline" className="bg-white/10 border-white/40 text-white hover:bg-white/20 hover:text-white rounded-full backdrop-blur-sm" asChild>
-              <a href="/images/convention/bcc-2026-report.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={REPORT_PDF_PATH} target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 w-4 h-4" /> Download the Full Report
               </a>
             </Button>

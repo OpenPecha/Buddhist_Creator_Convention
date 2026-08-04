@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { label: "Programs", to: "/programs" },
   { label: "Convention", to: "/convention" },
   { label: "Awards", to: "/awards" },
+  { label: "Get Involved", to: "/get-involved" },
 ];
 
 export const SiteHeader = () => {
@@ -88,7 +89,7 @@ export const SiteHeader = () => {
             className="bg-primary hover:bg-primary-light text-primary-foreground shadow-elevated rounded-full px-6"
             asChild
           >
-            <a href="/#newsletter">Get Involved</a>
+            <Link to="/get-involved">Get Involved</Link>
           </Button>
         </div>
 
@@ -130,7 +131,7 @@ export const SiteHeader = () => {
               asChild
               onClick={() => setMenuOpen(false)}
             >
-              <a href="/#newsletter">Get Involved</a>
+              <Link to="/get-involved">Get Involved</Link>
             </Button>
           </nav>
         </div>

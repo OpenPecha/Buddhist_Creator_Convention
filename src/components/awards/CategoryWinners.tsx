@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { Instagram, Quote } from "lucide-react";
 import { CATEGORY_WINNERS } from "@/data/awards";
 import { WinnerPortrait } from "@/components/awards/WinnerPortrait";
 import { SectionHeading } from "@/components/shared/SectionHeading";
@@ -36,6 +36,17 @@ export const CategoryWinners = () => {
                     <h3 className="text-xl sm:text-2xl font-semibold text-foreground">{winner.name}</h3>
                     {winner.affiliation && (
                       <p className="text-sm text-muted-foreground">{winner.affiliation}</p>
+                    )}
+                    {winner.instagram && (
+                      <a
+                        href={`https://www.instagram.com/${winner.instagram}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="relative z-10 mt-1 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                      >
+                        <Instagram className="h-3.5 w-3.5" /> @{winner.instagram}
+                      </a>
                     )}
                   </div>
                 </div>

@@ -18,6 +18,8 @@ export interface AwardWinner {
   /** Where the winner is from, or their monastery/affiliation. */
   affiliation?: string;
   photo?: string;
+  /** Instagram handle, without the @ — sourced from Award_Winners.docx. */
+  instagram?: string;
   /** One-line reason for the win, used as the card headline. */
   citation: string;
   /** Full narrative shown on the awards page. */
@@ -47,6 +49,7 @@ export const INFLUENCER_OF_THE_YEAR: AwardWinner = {
   honorific: "Venerable",
   affiliation: "Namdroling Monastery",
   photo: "/images/awards/quinthup-pema-bhutia.jpg",
+  instagram: "qp_buddhist.monk.official",
   citation:
     "A creator whose content is dedicated entirely to the teachings of the Buddha, reaching over a million people across social media.",
   story:
@@ -70,6 +73,7 @@ export const CATEGORY_WINNERS: AwardWinner[] = [
     shortCategory: "Rising Star",
     name: "Chhewang Dorjee",
     photo: "/images/awards/chhewang-dorjee.jpg",
+    instagram: "m.g.m_tsewang",
     citation: "For his video Why Everybody Should Create Content.",
     story:
       "The Rising Star Award celebrates the creator who demonstrated the most remarkable potential and progress over the ten days of the convention. The coaches invited all nominees onto the stage, acknowledging how narrow the margin was between the winner and the rest of the field.",
@@ -84,6 +88,7 @@ export const CATEGORY_WINNERS: AwardWinner[] = [
     shortCategory: "Audience Choice",
     name: "Tashi Chosgon",
     photo: "/images/awards/tashi-chosgon.jpg",
+    instagram: "undercover._.monk",
     citation: "Voted the community's favourite, with 33% of all participant votes.",
     story:
       "The Audience Choice Award places the power of selection entirely in the hands of the participants. Nine videos created during the convention were curated by the board team and screened in front of the entire audience, who then voted live. Tashi Chosgon emerged as the clear winner.",
@@ -102,6 +107,7 @@ export const CATEGORY_WINNERS: AwardWinner[] = [
     name: "Tenzin Chime",
     affiliation: "Arunachal Pradesh",
     photo: "/images/awards/tenzin-chime.jpg",
+    instagram: "tenzinc_vlog",
     citation: "For a collaborative reel built on the message 'Smile wherever possible, it is always possible.'",
     story:
       "The Most Creative Video Award recognises the most outstanding video produced during the convention, celebrating creators who pushed the boundaries of creativity, technology, and innovation. Tenzin Chime's winning reel was made together with fellow participants and set to a Bollywood track, gathering more than 30,000 engagements within three days of release.",
@@ -118,6 +124,7 @@ export const CATEGORY_WINNERS: AwardWinner[] = [
     name: "Sonam Dolma",
     affiliation: "Spiti",
     photo: "/images/awards/sonam-dolma.jpg",
+    instagram: "_sonam.dolma_",
     citation: "For growing her following by over 16% in just eight days.",
     story:
       "The Most Followers Gained Award recognises the participant who grew their audience the most across the convention, measured from their follower count at registration against the day before the ceremony. Hailing from a village in Spiti, the aspiring creator was visibly moved, shedding tears upon receiving an award she had never anticipated.",

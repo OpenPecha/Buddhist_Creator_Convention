@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/shared/PageHero";
 import { Reveal } from "@/components/shared/Reveal";
 import { SanghaSection } from "@/components/about/SanghaSection";
-import { AboutCollaborators } from "@/components/about/AboutCollaborators";
+import { Collaborators } from "@/components/shared/Collaborators";
 import { usePageMeta } from "@/hooks/use-page-meta";
 
 const About = () => {
@@ -55,7 +55,7 @@ const About = () => {
       </section>
 
       <SanghaSection />
-      <AboutCollaborators />
+      <Collaborators />
     </div>
   );
 };

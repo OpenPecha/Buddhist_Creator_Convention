@@ -1,7 +1,8 @@
 # Award winner portraits
 
-Drop the real winner photos into this folder using the exact filenames below.
-Until a file exists, the site shows a branded monogram of the winner's initials
+These are the real ceremony photos from `docs/Award_Winners.docx`, cropped to a
+uniform 4:3 landscape (each winner on stage with the coaches). If a file is ever
+missing, the site falls back to a branded monogram of the winner's initials
 instead — nothing breaks and no code change is needed.
 
 | File | Winner | Award |
@@ -12,8 +13,9 @@ instead — nothing breaks and no code change is needed.
 | `tenzin-chime.jpg` | Tenzin Chime | Most Creative Video Award |
 | `sonam-dolma.jpg` | Sonam Dolma | Most Followers Gained Award |
 
-**Recommended:** portrait orientation, 4:5 aspect ratio, at least 800×1000px.
-The images are also cropped square in the smaller cards, so keep the face
-centred with a little headroom.
+To swap in a cleaner individual portrait later, replace the file at the same
+path — 4:3 or taller works best, with the winner's face centred, since these
+render inside both square avatars and 4:5 cards.
 
-Filenames are wired up in `src/data/awards.ts` via each winner's `photo` field.
+Filenames and Instagram handles are wired up in `src/data/awards.ts` via each
+winner's `photo` and `instagram` fields.

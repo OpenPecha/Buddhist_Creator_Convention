@@ -1,4 +1,4 @@
-import { Trophy, Quote } from "lucide-react";
+import { Trophy, Quote, Instagram } from "lucide-react";
 import { INFLUENCER_OF_THE_YEAR as WINNER, AWARD_CEREMONY } from "@/data/awards";
 import { WinnerPortrait } from "@/components/awards/WinnerPortrait";
 import { Reveal } from "@/components/shared/Reveal";
@@ -47,6 +47,16 @@ export const InfluencerOfTheYear = () => {
                 </p>
                 {WINNER.affiliation && (
                   <p className="text-base sm:text-lg text-secondary-foreground/70">{WINNER.affiliation}</p>
+                )}
+                {WINNER.instagram && (
+                  <a
+                    href={`https://www.instagram.com/${WINNER.instagram}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-secondary-foreground/70 transition-colors hover:text-accent"
+                  >
+                    <Instagram className="h-4 w-4" /> @{WINNER.instagram}
+                  </a>
                 )}
               </div>
             </Reveal>

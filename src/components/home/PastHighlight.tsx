@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Download } from "lucide-react";
 import { Reveal } from "@/components/shared/Reveal";
 import { Button } from "@/components/ui/button";
+import { REPORT_PDF_PATH } from "@/data/impact";
 
 const STATS = [
-  { value: "110+", label: "Creators" },
+  { value: "110", label: "Creators" },
+  { value: "10", label: "Countries" },
   { value: "9", label: "Days" },
-  { value: "1", label: "First Global Sangha" },
 ];
 
 export const PastHighlight = () => {
@@ -47,7 +48,7 @@ export const PastHighlight = () => {
                 </Link>
               </Button>
               <Button variant="outline" className="rounded-full" asChild>
-                <a href="/images/convention/bcc-2026-report.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={REPORT_PDF_PATH} target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 w-4 h-4" /> Download the Report
                 </a>
               </Button>

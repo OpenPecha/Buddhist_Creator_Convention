@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, ExternalLink, Youtube, Instagram, Facebook, Linkedin } from "lucide-react";
 import { documentaryWatchUrl } from "@/data/documentary";
+import { SOCIAL_LINKS } from "@/data/social";
 
 export const SiteFooter = () => {
   const year = new Date().getFullYear();
@@ -35,7 +36,7 @@ export const SiteFooter = () => {
                 >
                   Watch the Documentary
                 </a>
-                <a href="/#newsletter" className="hover:text-primary-light transition-colors">Get Involved</a>
+                <Link to="/get-involved" className="hover:text-primary-light transition-colors">Get Involved</Link>
               </nav>
             </div>
 
@@ -46,16 +47,16 @@ export const SiteFooter = () => {
                 hello@buddhistcreators.com
               </a>
               <div className="flex flex-col text-sm [&>*]:py-2 md:[&>*]:py-1">
-                <a href="https://www.youtube.com/@BuddhistCreators" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <Youtube className="w-4 h-4" /> YouTube
                 </a>
-                <a href="https://www.instagram.com/buddhist_creators/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <Instagram className="w-4 h-4" /> Instagram
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61582543556233" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <Facebook className="w-4 h-4" /> Facebook
                 </a>
-                <a href="https://www.linkedin.com/company/109359959/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
+                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-light transition-colors">
                   <Linkedin className="w-4 h-4" /> LinkedIn
                 </a>
               </div>

@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Trophy } from "lucide-react";
 import { INFLUENCER_OF_THE_YEAR, CATEGORY_WINNERS, AWARD_CEREMONY } from "@/data/awards";
+import { CONVENTION_PHASES, PHASE_THREE } from "@/data/convention";
 import { WinnerPortrait } from "@/components/awards/WinnerPortrait";
+import { SectionHeading } from "@/components/shared/SectionHeading";
 import { Reveal } from "@/components/shared/Reveal";
 import { Button } from "@/components/ui/button";
 
-export const AwardsSection = () => {
+const PHASE = CONVENTION_PHASES[2];
+
+const RECAP_STEPS = [PHASE_THREE.recap, PHASE_THREE.certificateDistribution, PHASE_THREE.closingCeremony, PHASE_THREE.galaDinner];
+
+export const PhaseThree = () => {
   return (
-    <section id="awards" className="bg-background py-16 scroll-mt-20 sm:py-20 md:py-28">
+    <section id={PHASE.id} className="scroll-mt-20 py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
-        <Reveal className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
-          <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            <Trophy className="h-4 w-4" />
-            The Honour
-          </p>
-          <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground text-balance">
-            Buddhist Influencer of the Year 2026
-          </h2>
-          <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-hero" />
-          <p className="mt-5 text-base sm:text-lg leading-relaxed text-muted-foreground">
-            For the first time, we honoured those who have dedicated themselves to spreading the Dharma through
-            digital media — five awards presented at the closing ceremony on {AWARD_CEREMONY.date}.
-          </p>
-        </Reveal>
+        <SectionHeading
+          eyebrow={`${PHASE.phase} · ${PHASE.dates}`}
+          title={PHASE.title}
+          description={PHASE.summary}
+          className="mb-14"
+        />
 
         <div className="mx-auto max-w-6xl space-y-6">
           <Reveal>
@@ -43,27 +41,18 @@ export const AwardsSection = () => {
               </div>
 
               <div className="flex flex-col justify-center space-y-4 pt-4 md:pt-0">
+                <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                  <Trophy className="h-4 w-4" /> Buddhist Influencer of the Year
+                </p>
                 <div>
                   <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground">
                     {INFLUENCER_OF_THE_YEAR.honorific} {INFLUENCER_OF_THE_YEAR.name}
                   </h3>
-                  <p className="mt-1 text-sm sm:text-base text-muted-foreground">
-                    {INFLUENCER_OF_THE_YEAR.affiliation}
-                  </p>
+                  <p className="mt-1 text-sm sm:text-base text-muted-foreground">{INFLUENCER_OF_THE_YEAR.affiliation}</p>
                 </div>
                 <p className="text-base sm:text-lg leading-relaxed text-foreground/85">
                   {INFLUENCER_OF_THE_YEAR.citation}
                 </p>
-                {INFLUENCER_OF_THE_YEAR.stats && (
-                  <div className="flex flex-wrap gap-x-8 gap-y-3">
-                    {INFLUENCER_OF_THE_YEAR.stats.map((stat) => (
-                      <div key={stat.label}>
-                        <p className="font-display text-xl sm:text-2xl font-semibold text-primary">{stat.value}</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">{stat.label}</p>
-                      </div>
-                    ))}
-                  </div>
-                )}
                 <span className="inline-flex items-center gap-1.5 pt-1 font-medium text-primary transition-all group-hover:gap-3">
                   Read his story <ArrowRight className="h-4 w-4" />
                 </span>
@@ -89,26 +78,32 @@ export const AwardsSection = () => {
                       {winner.shortCategory}
                     </p>
                     <p className="mt-1 text-base sm:text-lg font-semibold text-foreground">{winner.name}</p>
-                    {winner.affiliation && (
-                      <p className="text-xs sm:text-sm text-muted-foreground">{winner.affiliation}</p>
-                    )}
                   </div>
                 </Link>
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={100} className="text-center">
+            <Button size="lg" className="rounded-full bg-primary text-primary-foreground hover:bg-primary-light" asChild>
+              <Link to="/awards">
+                Meet all the winners <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </Reveal>
         </div>
 
-        <Reveal delay={120} className="mt-10 text-center md:mt-14">
-          <Button
-            size="lg"
-            className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary-light sm:w-auto"
-            asChild
-          >
-            <Link to="/awards">
-              Meet all the winners <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+        <div className="mx-auto mt-16 max-w-3xl space-y-6">
+          {RECAP_STEPS.map((step, i) => (
+            <Reveal key={step.title} delay={i * 80} className="rounded-2xl border border-border/50 bg-card p-6 shadow-soft sm:p-7">
+              <h3 className="mb-2 text-lg font-semibold text-foreground">{step.title}</h3>
+              <p className="leading-relaxed text-muted-foreground">{step.body}</p>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={160} className="mx-auto mt-10 max-w-3xl text-center text-sm text-muted-foreground">
+          Awards presented by {AWARD_CEREMONY.presenters} on {AWARD_CEREMONY.date}, in the presence of {AWARD_CEREMONY.witness}.
         </Reveal>
       </div>
     </section>
