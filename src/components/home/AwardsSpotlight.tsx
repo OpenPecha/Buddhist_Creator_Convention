@@ -24,7 +24,7 @@ export const AwardsSpotlight = () => {
             BCC 2026 Awards
           </p>
           <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-white text-balance">
-            Meet the creators we honoured in Bodh Gaya
+            Meet the community chosen winners of 2026
           </h2>
           <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-accent" />
         </Reveal>
@@ -34,41 +34,39 @@ export const AwardsSpotlight = () => {
           <Reveal>
             <Link
               to={`/awards#${INFLUENCER_OF_THE_YEAR.id}`}
-              className="group grid gap-6 overflow-hidden rounded-3xl bg-white/5 p-5 ring-1 ring-white/10 transition-all duration-300 hover:bg-white/10 hover:ring-accent/40 sm:p-6 md:grid-cols-[minmax(0,320px)_minmax(0,1fr)] md:gap-8 md:p-8"
+              className="group relative flex min-h-[36rem] overflow-hidden rounded-3xl ring-1 ring-white/10 transition-all duration-300 hover:ring-accent/40 sm:min-h-[30rem]"
             >
-              <div className="relative mx-auto w-full max-w-[16rem] md:mx-0 md:max-w-none">
+              <div className="absolute inset-0">
                 <WinnerPortrait
                   name={INFLUENCER_OF_THE_YEAR.name}
                   photo={INFLUENCER_OF_THE_YEAR.photo}
-                  className="aspect-[4/5] w-full rounded-2xl ring-2 ring-accent/50"
-                  monogramClassName="text-5xl sm:text-6xl"
+                  className="h-full w-full"
+                  monogramClassName="text-6xl sm:text-7xl"
                 />
-                <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent-foreground shadow-elevated">
-                  Winner 2026
-                </span>
               </div>
 
-              <div className="flex flex-col justify-center space-y-4 pt-4 md:pt-0">
+              <span className="absolute left-5 top-5 z-10 whitespace-nowrap rounded-full bg-accent px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-accent-foreground shadow-elevated sm:left-6 sm:top-6">
+                Winner 2026
+              </span>
+
+              <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-6 pt-16 sm:p-8 sm:pt-24 md:max-w-2xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
                   {INFLUENCER_OF_THE_YEAR.category}
                 </p>
-                <div>
+                <div className="mt-2">
                   <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
                     {INFLUENCER_OF_THE_YEAR.honorific} {INFLUENCER_OF_THE_YEAR.name}
                   </h3>
-                  <p className="mt-1 text-sm sm:text-base text-secondary-foreground/70">
+                  <p className="mt-1 text-sm sm:text-base text-white/70">
                     {INFLUENCER_OF_THE_YEAR.affiliation}
                   </p>
                 </div>
-                <p className="text-base sm:text-lg leading-relaxed text-secondary-foreground/85">
-                  {INFLUENCER_OF_THE_YEAR.citation}
-                </p>
                 {INFLUENCER_OF_THE_YEAR.stats && (
-                  <div className="flex flex-wrap gap-x-8 gap-y-3">
+                  <div className="mt-4 flex flex-wrap gap-x-8 gap-y-3">
                     {INFLUENCER_OF_THE_YEAR.stats.map((stat) => (
                       <div key={stat.label}>
                         <p className="font-display text-xl sm:text-2xl font-semibold text-accent">{stat.value}</p>
-                        <p className="text-xs sm:text-sm text-secondary-foreground/65">{stat.label}</p>
+                        <p className="text-xs sm:text-sm text-white/65">{stat.label}</p>
                       </div>
                     ))}
                   </div>
@@ -86,21 +84,21 @@ export const AwardsSpotlight = () => {
               <Reveal key={winner.id} delay={i * 80} className="h-full">
                 <Link
                   to={`/awards#${winner.id}`}
-                  className="group flex h-full items-center gap-4 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:ring-accent/40 lg:flex-col lg:items-start lg:gap-3 lg:p-5"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white/5 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:ring-accent/40"
                 >
                   <WinnerPortrait
                     name={winner.name}
                     photo={winner.photo}
-                    className="h-16 w-16 shrink-0 rounded-xl sm:h-[4.5rem] sm:w-[4.5rem] lg:h-20 lg:w-20"
-                    monogramClassName="text-lg"
+                    className="aspect-[4/5] w-full"
+                    monogramClassName="text-4xl"
                   />
-                  <div className="min-w-0">
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 pt-12">
                     <p className="text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-accent">
                       {winner.shortCategory}
                     </p>
                     <p className="mt-1 text-base sm:text-lg font-semibold text-white">{winner.name}</p>
                     {winner.affiliation && (
-                      <p className="text-xs sm:text-sm text-secondary-foreground/65">{winner.affiliation}</p>
+                      <p className="text-xs sm:text-sm text-white/70">{winner.affiliation}</p>
                     )}
                   </div>
                 </Link>
